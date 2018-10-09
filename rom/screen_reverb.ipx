@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="screen_reverb" module="screen_reverb" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 05 18 20:58:34.785" version="5.4" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2018 05 18 20:58:34.626"/>
+		<File name="c:/fpga/projects/fxbox/rom/mem/screen_reverb_rom.mem" type="mem" modified="2018 05 12 22:00:05.957"/>
+		<File name="screen_reverb.lpc" type="lpc" modified="2018 05 18 20:58:32.973"/>
+		<File name="screen_reverb.vhd" type="top_level_vhdl" modified="2018 05 18 20:58:33.072"/>
+		<File name="screen_reverb_tmpl.vhd" type="template_vhdl" modified="2018 05 18 20:58:33.079"/>
+		<File name="tb_screen_reverb_tmpl.vhd" type="testbench_vhdl" modified="2018 05 18 20:58:33.103"/>
+  </Package>
+</DiamondModule>

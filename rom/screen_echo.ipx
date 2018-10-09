@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="screen_echo" module="screen_echo" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 05 18 20:58:45.489" version="5.4" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2018 05 18 20:58:45.339"/>
+		<File name="c:/fpga/projects/fxbox/rom/mem/screen_echo_rom.mem" type="mem" modified="2018 05 12 22:00:29.182"/>
+		<File name="screen_echo.lpc" type="lpc" modified="2018 05 18 20:58:43.489"/>
+		<File name="screen_echo.vhd" type="top_level_vhdl" modified="2018 05 18 20:58:43.585"/>
+		<File name="screen_echo_tmpl.vhd" type="template_vhdl" modified="2018 05 18 20:58:43.595"/>
+		<File name="tb_screen_echo_tmpl.vhd" type="testbench_vhdl" modified="2018 05 18 20:58:43.624"/>
+  </Package>
+</DiamondModule>

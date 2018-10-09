@@ -1,0 +1,26 @@
+Results of NGD DRC are available in adc_controller_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'ADC_BCK' has no load.
+WARNING - synthesis: input pad net 'ADC_BCK' has no legal load.
+WARNING - synthesis: logical net 'ADC_LRCK' has no load.
+WARNING - synthesis: input pad net 'ADC_LRCK' has no legal load.
+WARNING - synthesis: logical net 'ADC_PON_CLK' has no load.
+WARNING - synthesis: input pad net 'ADC_PON_CLK' has no legal load.
+WARNING - synthesis: logical net 'ADC_DATA' has no load.
+WARNING - synthesis: input pad net 'ADC_DATA' has no legal load.
+WARNING - synthesis: logical net 'ADC_CLIPL_P' has no load.
+WARNING - synthesis: input pad net 'ADC_CLIPL_P' has no legal load.
+WARNING - synthesis: DRC complete with 10 warnings.
+
+Design Results:
+     21 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FxBox_impl1.ngd.

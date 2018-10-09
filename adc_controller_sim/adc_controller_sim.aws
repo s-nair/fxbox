@@ -1,0 +1,14 @@
+[Version]
+Version=10.3
+[Designs]
+adc_controller_sim=adc_controller_sim.adf
+[Settings]
+Active=adc_controller_sim
+[Expand]
+adc_controller_sim=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

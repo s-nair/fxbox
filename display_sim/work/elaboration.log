@@ -1,0 +1,54 @@
+Active-HDL 10.3.3558.6081  2018-05-21 23:45:13
+
+Elaboration top modules:
+Architecture                  tb(testbench)
+
+
+-------------------------------------------------------------------------------------------------
+Entity         | Architecture | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------
+testbench      | tb           | work    |      | 10.3.3558.6081  (Windows) | -O3
+box_top        | rtl          | work    |      | 10.3.3558.6081  (Windows) | -O3
+gsr            | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+osch           | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+display_driver | rtl          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+input_handler  | rtl          | work    |      | 10.3.3558.6081  (Windows) | -O3
+clock_tree     | rtl          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+i2c_controller | rtl          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+ascii_table    | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
+screen_clean   | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
+screen_reverb  | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
+screen_echo    | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
+i2c_master     | rtl          | work    |      | 10.3.3558.6081  (Windows) | -dbg
+ram_data       | Structure    | work    |      | 10.3.3558.6081  (Windows) | -dbg
+vhi            | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+vlo            | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+dp8kc          | v            | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+VHDL Package                  | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------
+standard                      | std     |      |                           | <unavailable>
+TEXTIO                        | std     |      | 10.3.3558.6081  (Windows) |  -2008
+std_logic_1164                | ieee    |      | 10.3.3558.6081  (Windows) |  -2008
+fxbox_pkg                     | work    |      | 10.3.3558.6081  (Windows) | -dbg
+NUMERIC_STD                   | ieee    |      | 10.3.3558.6081  (Windows) |  -2008
+std_logic_misc                | ieee    |      | 10.3.3558.6081  (Windows) |  -2008
+std_logic_arith               | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+components                    | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+global                        | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+VITAL_Timing                  | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+VITAL_Primitives              | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+mem3                          | machxo2 |      | 10.3.3558.6081  (Windows) | -vendor lattice
+STD_LOGIC_UNSIGNED            | ieee    |      | 10.3.3558.6081  (Windows) | <unavailable>
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Library                       | Comment
+-------------------------------------------------------------------------------------------------
+ieee                          | Standard IEEE packages library
+machxo2                       | LATTICE Diamond 3.10, MACHXO2 VHDL LIBRARY
+std                           | Standard VHDL library
+work                          | None
+-------------------------------------------------------------------------------------------------

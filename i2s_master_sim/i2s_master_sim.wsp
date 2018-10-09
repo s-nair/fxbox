@@ -1,0 +1,21 @@
+[COMPILESTATUS|.\..\src\pkg\fxbox_pkg.vhd]
+FileTimeLow=30692504
+Status=Compiled
+
+[COMPILESTATUS|.\..\i2s_master.vhd]
+FileTimeLow=30692501
+Status=Compiled
+
+[COMPILESTATUS|.\..\i2s_master_tb.vhd]
+FileTimeLow=30692498
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\i2s_master_sim.adf|]
+Path=
+
+[Gui config]
+RunFor=100 us
+

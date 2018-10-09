@@ -1,0 +1,15 @@
+[Files List]
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\std/src/textio.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/std_logic_1164-body.vhdl=S
+C:\fpga\projects\FxBox/src/pkg/fxbox_pkg.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/numeric_std.vhdl=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/numeric_std-body.vhdl=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/math_real.vhdl=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/math_real-body.vhdl=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/arith_p.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\ieee/src/arith_b.vhd=S
+C:\lscc\diamond\3.10_x64\active-hdl\vlib\machxo2/src/MACHXO2COMP.vhd=S
+C:\fpga\projects\FxBox/i2s_slave.vhd=S
+C:\fpga\projects\FxBox/i2s_slave_tb.vhd=S

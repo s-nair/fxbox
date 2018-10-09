@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="C:/fpga/projects/FxBox/promote.xml" version="Diamond (64-bit) 3.10.0.111.2" date="Tue Oct 02 08:05:35 2018" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35921504" type="Info" />
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35921400" type="Info" />
+  <msg mid="35921067" type="Info" />
+  <msg mid="35921123" type="Error" />
+  <msg mid="35921205" type="Warning" />
+  <msg mid="35921251" type="Warning" />
+  <msg mid="35921303" type="Warning" />
+  <msg mid="35921613" type="Warning" />
+</userSetting>

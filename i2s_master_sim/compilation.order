@@ -1,0 +1,3 @@
+.\..\src\pkg\fxbox_pkg.vhd
+.\..\i2s_master.vhd
+.\..\i2s_master_tb.vhd

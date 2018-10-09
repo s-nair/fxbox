@@ -1,0 +1,127 @@
+#Start recording tcl command: 9/11/2018 21:13:11
+#Project Location: C:/fpga/projects/FxBox; Project name: FxBox
+C:/fpga/projects/Rough
+Rough
+#Start recording tcl command: 9/14/2018 12:35:48
+#Project Location: C:/fpga/projects/Rough; Project name: Rough
+prj_project open "C:/fpga/projects/FxBox/FxBox.ldf"
+prj_src add "C:/fpga/projects/FxBox/adc_controller.vhd"
+prj_run Synthesis -impl impl1
+prj_src exclude "C:/fpga/projects/FxBox/src/display_driver.vhd" "C:/fpga/projects/FxBox/src/i2c_controller.vhd" "C:/fpga/projects/FxBox/src/i2c_master.vhd" "C:/fpga/projects/FxBox/src/input_handler.vhd" "C:/fpga/projects/FxBox/src/clock_tree.vhd" "C:/fpga/projects/FxBox/rom/ascii_table.vhd" "C:/fpga/projects/FxBox/rom/ascii_table.ipx" "C:/fpga/projects/FxBox/rom/screen_clean.vhd" "C:/fpga/projects/FxBox/rom/screen_clean.ipx" "C:/fpga/projects/FxBox/rom/screen_reverb.vhd" "C:/fpga/projects/FxBox/rom/screen_reverb.ipx" "C:/fpga/projects/FxBox/rom/screen_echo.vhd" "C:/fpga/projects/FxBox/rom/screen_echo.ipx" "C:/fpga/projects/FxBox/pdpram/ram_data.vhd" "C:/fpga/projects/FxBox/pdpram/ram_data.ipx" "C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd" "C:/fpga/projects/FxBox/src/box_top.vhd"
+prj_run Synthesis -impl impl1
+prj_src add "C:/fpga/projects/FxBox/adc_controller_tb.vhd"
+prj_src syn_sim -src "C:/fpga/projects/FxBox/adc_controller_tb.vhd" SimulateOnly
+prj_src exclude "C:/fpga/projects/FxBox/src/tb/box_top_tb.vhd"
+prj_src add "C:/fpga/projects/FxBox/adc_controller_sim/adc_controller_sim.spf"
+prj_run Synthesis -impl impl1
+prj_src enable "C:/fpga/projects/FxBox/src/display_driver.vhd" "C:/fpga/projects/FxBox/src/i2c_controller.vhd" "C:/fpga/projects/FxBox/src/i2c_master.vhd" "C:/fpga/projects/FxBox/src/input_handler.vhd" "C:/fpga/projects/FxBox/src/clock_tree.vhd" "C:/fpga/projects/FxBox/rom/ascii_table.vhd" "C:/fpga/projects/FxBox/rom/ascii_table.ipx" "C:/fpga/projects/FxBox/rom/screen_clean.vhd" "C:/fpga/projects/FxBox/rom/screen_clean.ipx" "C:/fpga/projects/FxBox/rom/screen_reverb.vhd" "C:/fpga/projects/FxBox/rom/screen_reverb.ipx" "C:/fpga/projects/FxBox/rom/screen_echo.vhd" "C:/fpga/projects/FxBox/rom/screen_echo.ipx" "C:/fpga/projects/FxBox/pdpram/ram_data.vhd" "C:/fpga/projects/FxBox/pdpram/ram_data.ipx" "C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd"
+prj_src enable "C:/fpga/projects/FxBox/src/tb/box_top_tb.vhd" "C:/fpga/projects/FxBox/src/box_top.vhd"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+pgr_project open "C:/fpga/projects/FxBox/impl1/impl1.xcf"
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_src add "C:/fpga/projects/FxBox/dac_controller.vhd"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_src exclude "C:/fpga/projects/FxBox/adc_controller.vhd" "C:/fpga/projects/FxBox/adc_controller_tb.vhd" "C:/fpga/projects/FxBox/dac_controller.vhd"
+prj_run Export -impl impl1
+prj_src enable "C:/fpga/projects/FxBox/adc_controller.vhd" "C:/fpga/projects/FxBox/adc_controller_tb.vhd"
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+prj_run Export -impl impl1
+pgr_program run
+pgr_project save "C:/fpga/projects/FxBox/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/fpga/projects/Rough/Rough.ldf"
+#Stop recording: 9/14/2018 12:35:49

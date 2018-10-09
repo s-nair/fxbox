@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1101650</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(3): Semantic error in &quot;USE PRIMARY NET &quot;CLK_TREE[0]&quot; ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[0]</Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>1101650</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(4): Semantic error in &quot;USE PRIMARY NET &quot;CLK_TREE[5]&quot; ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[5]</Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>1101793</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(5): Semantic error in &quot;USE SECONDARY NET &quot;CLK_TREE[14]&quot; ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[14]</Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(7): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[5]&quot; 0.400000 MHz ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[5] matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(8): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[14]&quot; 0.001000 MHz ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[14] matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(14): Semantic error in &quot;INPUT_SETUP PORT &quot;LEFT_IN&quot; 500000.000000 ns CLKNET &quot;CLK_TREE[14]&quot; ;&quot;: </Dynamic>
+            <Dynamic>LEFT_IN matches no ports in the design. &quot;CLK_TREE[14]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(15): Semantic error in &quot;INPUT_SETUP PORT &quot;RIGHT_IN&quot; 500000.000000 ns CLKNET &quot;CLK_TREE[14]&quot; ;&quot;: </Dynamic>
+            <Dynamic>RIGHT_IN matches no ports in the design. &quot;CLK_TREE[14]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(16): Semantic error in &quot;CLOCK_TO_OUT PORT &quot;DISP_I2C_SCL&quot; 2500.000000 ns CLKNET &quot;CLK_TREE[5]&quot; ;&quot;: </Dynamic>
+            <Dynamic>&quot;CLK_TREE[5]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(17): Semantic error in &quot;CLOCK_TO_OUT PORT &quot;DISP_I2C_SDA&quot; 2500.000000 ns CLKNET &quot;CLK_TREE[5]&quot; ;&quot;: </Dynamic>
+            <Dynamic>&quot;CLK_TREE[5]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(26): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[0]&quot; 19.000000 MHz ;&quot;: </Dynamic>
+            <Dynamic>CLK_TREE[0] matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(32): Semantic error in &quot;INPUT_SETUP PORT &quot;DATA&quot; 29.000000 ns HOLD 39.000000 ns CLKPORT &quot;BCLK&quot; ;&quot;: </Dynamic>
+            <Dynamic>DATA matches no ports in the design. &quot;BCLK&quot; matches no clock ports in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>1101121</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(33): Semantic error in &quot;INPUT_SETUP PORT &quot;DATA_IN&quot; 29.000000 ns HOLD 39.000000 ns CLKPORT &quot;BCLK_IN&quot; ;&quot;: </Dynamic>
+            <Dynamic>DATA_IN matches no ports in the design. &quot;BCLK_IN&quot; matches no clock ports in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(34): Semantic error in &quot;FREQUENCY NET &quot;WCLK_OUT_c_6&quot; 0.048000 MHz ;&quot;: </Dynamic>
+            <Dynamic>WCLK_OUT_c_6 matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(35): Semantic error in &quot;FREQUENCY NET &quot;BCLK_IN_c&quot; 6.144000 MHz ;&quot;: </Dynamic>
+            <Dynamic>BCLK_IN_c matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(36): Semantic error in &quot;FREQUENCY NET &quot;WCLK_IN_c&quot; 0.048000 MHz ;&quot;: </Dynamic>
+            <Dynamic>WCLK_IN_c matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(38): Semantic error in &quot;FREQUENCY NET &quot;I2SS/BCLK_SR_L&quot; 6.144000 MHz ;&quot;: </Dynamic>
+            <Dynamic>I2SS/BCLK_SR_L matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(40): Semantic error in &quot;FREQUENCY NET &quot;WCLK_EDGE&quot; 6.144000 MHz ;&quot;: </Dynamic>
+            <Dynamic>WCLK_EDGE matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>1100523</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/fpga/projects/FxBox/FxBox.lpf(41): Semantic error in &quot;FREQUENCY NET &quot;WCLK_EDGE&quot; 6.144000 MHz ;&quot;: </Dynamic>
+            <Dynamic>WCLK_EDGE matches no clock nets in the design. </Dynamic>
+            <Navigation>C:/fpga/projects/FxBox/FxBox.lpf</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/fpga/projects/FxBox/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(5): </Dynamic>
+            <Dynamic>fxbox_pkg</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(65): </Dynamic>
+            <Dynamic>fxbox_pkg</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd</Navigation>
+            <Navigation>65</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/box_top.vhd(12): </Dynamic>
+            <Dynamic>box_top</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/box_top.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/box_top.vhd(45): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/box_top.vhd</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/adc_controller.vhd(12): </Dynamic>
+            <Dynamic>adc_controller</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/adc_controller.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/adc_controller.vhd(27): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/adc_controller.vhd</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dac_controller.vhd(11): </Dynamic>
+            <Dynamic>dac_controller</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dac_controller.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dac_controller.vhd(20): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dac_controller.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dsp_clean.vhd(11): </Dynamic>
+            <Dynamic>dsp_clean</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dsp_clean.vhd</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dsp_clean.vhd(19): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dsp_clean.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dsp_normalize.vhd(19): </Dynamic>
+            <Dynamic>dsp_normalize</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dsp_normalize.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/dsp_normalize.vhd(27): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/dsp_normalize.vhd</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2s_master.vhd(26): </Dynamic>
+            <Dynamic>i2s_master</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2s_master.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2s_master.vhd(39): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2s_master.vhd</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2s_slave.vhd(26): </Dynamic>
+            <Dynamic>i2s_slave</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2s_slave.vhd</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2s_slave.vhd(39): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2s_slave.vhd</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/display_driver.vhd(12): </Dynamic>
+            <Dynamic>display_driver</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/display_driver.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/display_driver.vhd(22): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/display_driver.vhd</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_controller.vhd(12): </Dynamic>
+            <Dynamic>i2c_controller</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_controller.vhd</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_controller.vhd(25): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_controller.vhd</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(51): </Dynamic>
+            <Dynamic>i2c_master</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(66): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>66</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/input_handler.vhd(9): </Dynamic>
+            <Dynamic>input_handler</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/input_handler.vhd</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/input_handler.vhd(17): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/input_handler.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/clock_tree.vhd(86): </Dynamic>
+            <Dynamic>clock_tree</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/clock_tree.vhd</Navigation>
+            <Navigation>86</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/clock_tree.vhd(94): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/clock_tree.vhd</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): </Dynamic>
+            <Dynamic>ascii_table</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/ascii_table.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/ascii_table.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): </Dynamic>
+            <Dynamic>ascii_table</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/ascii_table.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/ascii_table.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): </Dynamic>
+            <Dynamic>screen_clean</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_clean.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_clean.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): </Dynamic>
+            <Dynamic>screen_clean</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_clean.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_clean.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): </Dynamic>
+            <Dynamic>screen_reverb</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_reverb.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_reverb.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): </Dynamic>
+            <Dynamic>screen_reverb</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_reverb.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_reverb.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): </Dynamic>
+            <Dynamic>screen_echo</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_echo.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_echo.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): </Dynamic>
+            <Dynamic>screen_echo</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_echo.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/rom/screen_echo.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): </Dynamic>
+            <Dynamic>ram_data</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/ram_data.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/ram_data.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): </Dynamic>
+            <Dynamic>ram_data</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/ram_data.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/ram_data.vhd</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35921014</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(56): </Dynamic>
+            <Dynamic>math_real</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35921013</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(685): </Dynamic>
+            <Dynamic>math_real</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd</Navigation>
+            <Navigation>685</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/box_top.vhd(43): </Dynamic>
+            <Dynamic>box_top</Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/box_top.vhd</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2s_master.vhd(213): </Dynamic>
+            <Dynamic>\I2SM/DATA_OUT_R_BUF_i0</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2s_master.vhd</Navigation>
+            <Navigation>213</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(170): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/ADDR_BYTE_R_i7</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>170</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(183): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/CMD_BYTE_R_i7</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(196): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/DATA_BYTE_R_i7</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>196</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(170): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/ADDR_BYTE_R_i4</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>170</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(183): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/CMD_BYTE_R_i6</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>183</Navigation>
+        </Message>
+        <Message>
+            <ID>35935014</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpga/projects/fxbox/src/i2c_master.vhd(196): </Dynamic>
+            <Dynamic>\DAC0/I2CM1/DATA_BYTE_R_i2</Dynamic>
+            <Navigation>c:/fpga/projects/fxbox/src/i2c_master.vhd</Navigation>
+            <Navigation>196</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/CMD_BYTE_R</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\DD0/PS_DRV</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\DAC0/I2CM1/PS_I2CM</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\DD0/I2CC0/I2CM0/PS_I2CM</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DAC0/I2CM1/D_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\DAC0/I2CM1/D_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/D_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/D_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\DD0/I2CC0/I2CM0/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DAC0/I2CM1/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\DAC0/I2CM1/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\DAC0/I2CM1/PS_I2CM_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>\DD0/PS_DRV_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>23</Dynamic>
+            <Dynamic>\I2SM/DATA_OUT_L_BUF</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+            <Navigation>ADC_CLIPL_P</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>ADC_CLIPL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+            <Navigation>DAC_ZEROL_P</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>DAC_ZEROL_P</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DAC_LRCK_c_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>ADC_LRCK</Dynamic>
+            <Dynamic>83</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DAC_BCK_c_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>ADC_BCK</Dynamic>
+            <Dynamic>86</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=DRV_RUN loads=2 clock_loads=2
+   Signal=I2SS/BCLK_GATE_RELEASE loads=2 clock_loads=2
+   Signal=DAC_BCK_c_c_derived_5 loads=3 clock_loads=3
+   Signal=BTN0/IN_DEBOUNCE loads=1 clock_loads=1
+   Signal=DD0/I2CC0/I2CM0/LOAD_ADDR loads=4 clock_loads=1
+   Signal=DD0/I2CC0/I2CM0/LOAD_DATA[1] loads=4 clock_loads=4
+   Sign   ....   lock_loads=1
+   Signal=BTN1/IN_DEBOUNCE loads=1 clock_loads=1
+   Signal=DAC0/DAC_DGOOD loads=1 clock_loads=1
+   Signal=SYS_CLK_TREE[5]_enable_4 loads=5 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=DRV_RUN loads=2 clock_loads=2
+   Signal=I2SS/BCLK_GATE_RELEASE loads=2 clock_loads=2
+   Signal=DAC_BCK_c_c_derived_5 loads=3 clock_loads=3
+   Signal=BTN0/IN_DEBOUNCE loads=1 clock_loads=1
+   Signal=DD0/I2CC0/I2CM0/LOAD_ADDR loads=4 clock_loads=1
+   Signal=DD0/I2CC0/I2CM0/LOAD_DATA[1] loads=4 clock_loads=4
+   Sign   ....   lock_loads=1
+   Signal=BTN1/IN_DEBOUNCE loads=1 clock_loads=1
+   Signal=DAC0/DAC_DGOOD loads=1 clock_loads=1
+   Signal=SYS_CLK_TREE[5]_enable_4 loads=5 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Translate">
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>OSC0_SEDSTDBY</Dynamic>
+            <Navigation>OSC0_SEDSTDBY</Navigation>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;C:\fpga\projects\Rough\i2c_controller_ram.vhd&quot;:76:21:76:33|Signal data_w_i2cm_r is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>C:\fpga\projects\Rough\i2c_controller_ram.vhd</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>76</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>Signal data_w_i2cm_r is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\fpga\projects\Rough\i2c_master.vhd&quot;:254:2:254:3|Pruning register bits 4 to 1 of D_IN(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\fpga\projects\Rough\i2c_master.vhd</Navigation>
+            <Navigation>254</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>254</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Pruning register bits 4 to 1 of D_IN(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL177 :&quot;C:\fpga\projects\Rough\i2c_controller_ram.vhd&quot;:216:2:216:3|Sharing sequential element RUN_I2CM. Add a syn_preserve attribute to the element to prevent sharing.</Dynamic>
+            <Navigation>CL177</Navigation>
+            <Navigation>C:\fpga\projects\Rough\i2c_controller_ram.vhd</Navigation>
+            <Navigation>216</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>216</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sharing sequential element RUN_I2CM. Add a syn_preserve attribute to the element to prevent sharing.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\display_driver.vhd&quot;:288:2:288:3|Sequential instance DD0.MODE_FX_R[0] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\display_driver.vhd</Navigation>
+            <Navigation>288</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>288</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.MODE_FX_R[0] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\fpga\projects\rough\rom\screen_reverb.vhd&quot;:112:4:112:22|Removing instance screen_reverb_0_0_0 (in view: work.screen_reverb(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\fpga\projects\rough\rom\screen_reverb.vhd</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Removing instance screen_reverb_0_0_0 (in view: work.screen_reverb(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN114 :&quot;c:\fpga\projects\rough\rom\screen_echo.vhd&quot;:112:4:112:20|Removing instance screen_echo_0_0_0 (in view: work.screen_echo(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.</Dynamic>
+            <Navigation>BN114</Navigation>
+            <Navigation>c:\fpga\projects\rough\rom\screen_echo.vhd</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>112</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Removing instance screen_echo_0_0_0 (in view: work.screen_echo(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\fpga\projects\rough\clock_tree.vhd&quot;:103:2:103:3|Found inferred clock disp_drv_test|M_CLK_inferred_clock which controls 15 sequential elements including CTR0.CLOCK_R[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\fpga\projects\rough\clock_tree.vhd</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>103</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock disp_drv_test|M_CLK_inferred_clock which controls 15 sequential elements including CTR0.CLOCK_R[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:347:2:347:3|Found inferred clock i2c_master|BIT_PULSE_inferred_clock which controls 1 sequential elements including DD0.I2CC0.I2CM0.SDA_R. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>347</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>347</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Found inferred clock i2c_master|BIT_PULSE_inferred_clock which controls 1 sequential elements including DD0.I2CC0.I2CM0.SDA_R. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[4] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[4] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[3] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[3] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[2] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[2] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[1] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>164</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[1] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[7] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[7] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[6] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[6] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[5] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[5] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[4] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[4] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[3] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[3] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[2] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[2] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MO129 :&quot;c:\fpga\projects\rough\i2c_master.vhd&quot;:181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[0] is reduced to a combinational gate by constant propagation.</Dynamic>
+            <Navigation>MO129</Navigation>
+            <Navigation>c:\fpga\projects\rough\i2c_master.vhd</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>2</Navigation>
+            <Navigation>181</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[0] is reduced to a combinational gate by constant propagation.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock disp_drv_test|M_CLK_inferred_clock with period 26.32ns. Please declare a user-defined clock on object &quot;n:M_CLK&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock disp_drv_test|M_CLK_inferred_clock with period 26.32ns. Please declare a user-defined clock on object &quot;n:M_CLK&quot;</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock i2c_master|BIT_PULSE_inferred_clock with period 26.32ns. Please declare a user-defined clock on object &quot;n:DD0.I2CC0.I2CM0.BIT_PULSE&quot;</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock i2c_master|BIT_PULSE_inferred_clock with period 26.32ns. Please declare a user-defined clock on object &quot;n:DD0.I2CC0.I2CM0.BIT_PULSE&quot;</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

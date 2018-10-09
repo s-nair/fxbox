@@ -1,0 +1,4 @@
+i<>.\..\src\pkg\fxbox_pkg.vhd
+i<>.\..\src\clock_tree.vhd
+i<>.\..\i2s_slave.vhd
+i<>.\..\i2s_slave_tb.vhd

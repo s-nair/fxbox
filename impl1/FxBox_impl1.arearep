@@ -1,0 +1,256 @@
+----------------------------------------------------------------------
+Report for cell box_top.TECH
+Register bits:  424 of 7209 (5.882%)
+I/O cells:      24
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        20          100.0
+                              DP8KC         8          100.0
+                            FD1P3AX        15          100.0
+                            FD1S3AX       250          100.0
+                            FD1S3AY         3          100.0
+                            FD1S3BX         1          100.0
+                            FD1S3DX        68          100.0
+                            FD1S3IX        76          100.0
+                            FD1S3JX        11          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                                INV         3          100.0
+                            L6MUX21         8          100.0
+                               LUT4       230          100.0
+                              MUX21         1          100.0
+                                 OB        18          100.0
+                               OSCH         1          100.0
+                              PFUMX        29          100.0
+SUB MODULES
+                     adc_controller         1
+                        ascii_table         1
+                     clock_tree(10)         1
+                     clock_tree(11)         1
+                      clock_tree(5)         1
+                   clock_tree(5)_U0         1
+                     dac_controller         1
+                     display_driver         1
+                     i2c_controller         1
+                         i2c_master         1
+                      i2c_master_U1         1
+               i2s_master(24,128,1)         1
+                i2s_slave(24,128,1)         1
+                      input_handler         1
+                   input_handler_U2         1
+                           ram_data         1
+                       screen_clean         1
+                        screen_echo         1
+                      screen_reverb         1
+                              TOTAL       768
+----------------------------------------------------------------------
+Report for cell i2s_slave(24,128,1).v1
+Instance Path : I2SS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        24            9.6
+                            FD1S3DX         8           11.8
+                               LUT4        12            5.2
+                              TOTAL        44
+----------------------------------------------------------------------
+Report for cell adc_controller.v1
+Instance Path : ADC0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        45           18.0
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell input_handler_U2.v1
+Instance Path : BTN0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        20            8.0
+                            FD1S3DX         1            1.5
+                               LUT4        10            4.3
+                              TOTAL        31
+----------------------------------------------------------------------
+Report for cell display_driver.v1
+Instance Path : DD0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12           60.0
+                              DP8KC         8          100.0
+                            FD1P3AX         7           46.7
+                            FD1S3AX        81           32.4
+                            FD1S3AY         2           66.7
+                            FD1S3BX         1          100.0
+                            FD1S3DX         5            7.4
+                            FD1S3IX        25           32.9
+                            FD1S3JX         7           63.6
+                            L6MUX21         8          100.0
+                               LUT4       124           53.9
+                              MUX21         1          100.0
+                              PFUMX        27           93.1
+SUB MODULES
+                        ascii_table         1
+                     clock_tree(10)         1
+                     clock_tree(11)         1
+                      clock_tree(5)         1
+                     i2c_controller         1
+                         i2c_master         1
+                           ram_data         1
+                       screen_clean         1
+                        screen_echo         1
+                      screen_reverb         1
+                              TOTAL       318
+----------------------------------------------------------------------
+Report for cell screen_echo.v1
+Instance Path : DD0.ROM3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell screen_reverb.v1
+Instance Path : DD0.ROM2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell screen_clean.v1
+Instance Path : DD0.ROM1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ascii_table.v1
+Instance Path : DD0.ROM0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         4           50.0
+                              TOTAL         4
+----------------------------------------------------------------------
+Report for cell i2c_controller.v1
+Instance Path : DD0.I2CC0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           30.0
+                              DP8KC         1           12.5
+                            FD1P3AX         7           46.7
+                            FD1S3AX        36           14.4
+                            FD1S3BX         1          100.0
+                            FD1S3DX         5            7.4
+                            FD1S3IX        14           18.4
+                            FD1S3JX         5           45.5
+                               LUT4        52           22.6
+                              MUX21         1          100.0
+                              PFUMX         4           13.8
+SUB MODULES
+                     clock_tree(11)         1
+                      clock_tree(5)         1
+                         i2c_master         1
+                           ram_data         1
+                              TOTAL       136
+----------------------------------------------------------------------
+Report for cell i2c_master.v1
+Instance Path : DD0.I2CC0.I2CM0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         7           46.7
+                            FD1S3AX        25           10.0
+                            FD1S3IX         2            2.6
+                            FD1S3JX         4           36.4
+                               LUT4        35           15.2
+                              MUX21         1          100.0
+                              PFUMX         4           13.8
+SUB MODULES
+                      clock_tree(5)         1
+                              TOTAL        79
+----------------------------------------------------------------------
+Report for cell clock_tree(5).v1
+Instance Path : DD0.I2CC0.I2CM0.CT0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3            1.2
+                            FD1S3JX         2           18.2
+                               LUT4         6            2.6
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell clock_tree(11).v1
+Instance Path : DD0.I2CC0.CTR0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           30.0
+                            FD1S3IX        11           14.5
+                              TOTAL        17
+----------------------------------------------------------------------
+Report for cell ram_data.v1
+Instance Path : DD0.I2CC0.BUF0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           12.5
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell clock_tree(10).v1
+Instance Path : DD0.CTR0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         6           30.0
+                            FD1S3AX        10            4.0
+                               LUT4        10            4.3
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell i2s_master(24,128,1).v1
+Instance Path : I2SM
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        27           10.8
+                            FD1S3DX         7           10.3
+                            FD1S3IX        48           63.2
+                               LUT4        35           15.2
+                              TOTAL       117
+----------------------------------------------------------------------
+Report for cell input_handler.v1
+Instance Path : BTN1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        20            8.0
+                            FD1S3DX         1            1.5
+                               LUT4        10            4.3
+                              TOTAL        31
+----------------------------------------------------------------------
+Report for cell dac_controller.v1
+Instance Path : DAC0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           53.3
+                            FD1S3AX        11            4.4
+                            FD1S3DX        46           67.6
+                            FD1S3IX         3            3.9
+                            FD1S3JX         4           36.4
+                               LUT4        30           13.0
+                              PFUMX         2            6.9
+SUB MODULES
+                   clock_tree(5)_U0         1
+                      i2c_master_U1         1
+                              TOTAL       106
+----------------------------------------------------------------------
+Report for cell i2c_master_U1.v1
+Instance Path : DAC0.I2CM1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         8           53.3
+                            FD1S3AX        11            4.4
+                            FD1S3IX         3            3.9
+                            FD1S3JX         4           36.4
+                               LUT4        28           12.2
+                              PFUMX         2            6.9
+SUB MODULES
+                   clock_tree(5)_U0         1
+                              TOTAL        57
+----------------------------------------------------------------------
+Report for cell clock_tree(5)_U0.v1
+Instance Path : DAC0.I2CM1.CT0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3            1.2
+                            FD1S3JX         2           18.2
+                               LUT4         6            2.6
+                              TOTAL        11

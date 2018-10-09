@@ -1,0 +1,5 @@
+5
+~E 1 "./../../adc_controller.vhd" 11 adc_controller
+~A 1 "./../../adc_controller.vhd" 30 rtl
+~E 1 "./../../adc_controller_tb.vhd" 8 testbench
+~A 1 "./../../adc_controller_tb.vhd" 11 tb

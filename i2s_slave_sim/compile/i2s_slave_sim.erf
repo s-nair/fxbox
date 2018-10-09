@@ -1,0 +1,4 @@
+MESSAGE "File: C:\fpga\projects\FxBox\i2s_slave_tb.vhd" 
+MESSAGE "Compile Entity "testbench"" 
+MESSAGE "Compile Architecture "tb" of Entity "testbench"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]" 

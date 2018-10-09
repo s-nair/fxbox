@@ -1,0 +1,14 @@
+i<>.\..\src\pkg\fxbox_pkg.vhd
+i<>.\..\pdpram\._Real_._Math_.vhd
+i<>.\..\src\clock_tree.vhd
+i<>.\..\src\input_handler.vhd
+i<>.\..\rom\screen_echo.vhd
+i<>.\..\rom\screen_reverb.vhd
+i<>.\..\rom\screen_clean.vhd
+i<>.\..\rom\ascii_table.vhd
+i<>.\..\pdpram\ram_data.vhd
+i<>.\..\src\i2c_master.vhd
+i<>.\..\src\i2c_controller.vhd
+i<>.\..\src\display_driver.vhd
+i<>.\..\src\box_top.vhd
+i<>.\..\src\tb\box_top_tb.vhd

@@ -1,0 +1,21 @@
+[COMPILESTATUS|.\..\src\pkg\fxbox_pkg.vhd]
+FileTimeLow=30691214
+Status=Modified
+
+[COMPILESTATUS|.\..\adc_controller.vhd]
+FileTimeLow=30691203
+Status=Modified
+
+[COMPILESTATUS|.\..\adc_controller_tb.vhd]
+FileTimeLow=30690039
+Status=Compiled
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\adc_controller_sim.adf|]
+Path=/testbench
+
+[Gui config]
+RunFor=10000 ns
+

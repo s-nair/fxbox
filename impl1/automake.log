@@ -1,0 +1,1400 @@
+
+synthesis -f "FxBox_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Oct 01 17:52:51 2018
+
+
+Command Line:  synthesis -f FxBox_impl1_lattice.synproj -gui -msgset C:/fpga/projects/FxBox/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = box_top.
+Target frequency = 38.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/fpga/projects/FxBox/impl1 (searchpath added)
+-p C:/fpga/projects/FxBox (searchpath added)
+VHDL library = work
+VHDL design file = C:/fpga/projects/FxBox/src/pkg/fxbox_pkg.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/box_top.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/adc_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dac_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dsp_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dsp_normalize.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2s_master.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2s_slave.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/display_driver.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2c_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2c_master.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/input_handler.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/clock_tree.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/ascii_table.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/ascii_table.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_echo.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_echo.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd
+NGD file = FxBox_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="C:/fpga/projects/FxBox/impl1"  />
+Analyzing VHDL file c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd. VHDL-1481
+    <postMsg mid="35921014" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(5): " arg1="fxbox_pkg" arg2="c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd" arg3="5"  />
+    <postMsg mid="35921013" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(65): " arg1="fxbox_pkg" arg2="c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd" arg3="65"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/box_top.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/box_top.vhd(12): " arg1="box_top" arg2="c:/fpga/projects/fxbox/src/box_top.vhd" arg3="12"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/box_top.vhd(45): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/box_top.vhd" arg3="45"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/adc_controller.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/adc_controller.vhd(12): " arg1="adc_controller" arg2="c:/fpga/projects/fxbox/src/adc_controller.vhd" arg3="12"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/adc_controller.vhd(27): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/adc_controller.vhd" arg3="27"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dac_controller.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dac_controller.vhd(11): " arg1="dac_controller" arg2="c:/fpga/projects/fxbox/src/dac_controller.vhd" arg3="11"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dac_controller.vhd(20): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/dac_controller.vhd" arg3="20"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dsp_clean.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dsp_clean.vhd(11): " arg1="dsp_clean" arg2="c:/fpga/projects/fxbox/src/dsp_clean.vhd" arg3="11"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dsp_clean.vhd(19): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/dsp_clean.vhd" arg3="19"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dsp_normalize.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dsp_normalize.vhd(19): " arg1="dsp_normalize" arg2="c:/fpga/projects/fxbox/src/dsp_normalize.vhd" arg3="19"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/dsp_normalize.vhd(27): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/dsp_normalize.vhd" arg3="27"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2s_master.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2s_master.vhd(26): " arg1="i2s_master" arg2="c:/fpga/projects/fxbox/src/i2s_master.vhd" arg3="26"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2s_master.vhd(39): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/i2s_master.vhd" arg3="39"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2s_slave.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2s_slave.vhd(26): " arg1="i2s_slave" arg2="c:/fpga/projects/fxbox/src/i2s_slave.vhd" arg3="26"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2s_slave.vhd(39): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/i2s_slave.vhd" arg3="39"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/display_driver.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/display_driver.vhd(12): " arg1="display_driver" arg2="c:/fpga/projects/fxbox/src/display_driver.vhd" arg3="12"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/display_driver.vhd(22): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/display_driver.vhd" arg3="22"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2c_controller.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_controller.vhd(12): " arg1="i2c_controller" arg2="c:/fpga/projects/fxbox/src/i2c_controller.vhd" arg3="12"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_controller.vhd(25): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/i2c_controller.vhd" arg3="25"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2c_master.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(51): " arg1="i2c_master" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="51"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(66): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="66"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/input_handler.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/input_handler.vhd(9): " arg1="input_handler" arg2="c:/fpga/projects/fxbox/src/input_handler.vhd" arg3="9"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/input_handler.vhd(17): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/input_handler.vhd" arg3="17"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/clock_tree.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/clock_tree.vhd(86): " arg1="clock_tree" arg2="c:/fpga/projects/fxbox/src/clock_tree.vhd" arg3="86"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/clock_tree.vhd(94): " arg1="rtl" arg2="c:/fpga/projects/fxbox/src/clock_tree.vhd" arg3="94"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/ascii_table.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): " arg1="ascii_table" arg2="c:/fpga/projects/fxbox/rom/ascii_table.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/ascii_table.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/ascii_table.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): " arg1="ascii_table" arg2="c:/fpga/projects/fxbox/rom/ascii_table.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/ascii_table.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_clean.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): " arg1="screen_clean" arg2="c:/fpga/projects/fxbox/rom/screen_clean.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_clean.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_clean.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): " arg1="screen_clean" arg2="c:/fpga/projects/fxbox/rom/screen_clean.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_clean.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_reverb.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): " arg1="screen_reverb" arg2="c:/fpga/projects/fxbox/rom/screen_reverb.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_reverb.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_reverb.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): " arg1="screen_reverb" arg2="c:/fpga/projects/fxbox/rom/screen_reverb.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_reverb.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_echo.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): " arg1="screen_echo" arg2="c:/fpga/projects/fxbox/rom/screen_echo.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_echo.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_echo.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): " arg1="screen_echo" arg2="c:/fpga/projects/fxbox/rom/screen_echo.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): " arg1="structure" arg2="c:/fpga/projects/fxbox/rom/screen_echo.vhd" arg3="23"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/ram_data.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): " arg1="ram_data" arg2="c:/fpga/projects/fxbox/pdpram/ram_data.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): " arg1="structure" arg2="c:/fpga/projects/fxbox/pdpram/ram_data.vhd" arg3="28"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/ram_data.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): " arg1="ram_data" arg2="c:/fpga/projects/fxbox/pdpram/ram_data.vhd" arg3="14"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): " arg1="structure" arg2="c:/fpga/projects/fxbox/pdpram/ram_data.vhd" arg3="28"  />
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd. VHDL-1481
+    <postMsg mid="35921014" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(56): " arg1="math_real" arg2="c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd" arg3="56"  />
+    <postMsg mid="35921013" type="Info"    dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(685): " arg1="math_real" arg2="c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd" arg3="685"  />
+unit box_top is not yet analyzed. VHDL-1485
+unit box_top is not yet analyzed. VHDL-1485
+c:/fpga/projects/fxbox/src/box_top.vhd(12): executing box_top(rtl)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="c:/fpga/projects/fxbox/src/box_top.vhd(43): " arg1="box_top" arg2="rtl" arg3="c:/fpga/projects/fxbox/src/box_top.vhd" arg4="43"  />
+Top module name (VHDL): box_top
+Last elaborated design is box_top(rtl)
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = box_top.
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADC_CLIPL_P"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="DAC_ZEROL_P"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2s_master.vhd(213): " arg1="\I2SM/DATA_OUT_R_BUF_i0" arg2="c:/fpga/projects/fxbox/src/i2s_master.vhd" arg3="213"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(170): " arg1="\DAC0/I2CM1/ADDR_BYTE_R_i7" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="170"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(183): " arg1="\DAC0/I2CM1/CMD_BYTE_R_i7" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="183"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(196): " arg1="\DAC0/I2CM1/DATA_BYTE_R_i7" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="196"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(170): " arg1="\DAC0/I2CM1/ADDR_BYTE_R_i4" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="170"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(183): " arg1="\DAC0/I2CM1/CMD_BYTE_R_i6" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="183"  />
+    <postMsg mid="35935014" type="Warning" dynamic="2" navigation="2" arg0="c:/fpga/projects/fxbox/src/i2c_master.vhd(196): " arg1="\DAC0/I2CM1/DATA_BYTE_R_i2" arg2="c:/fpga/projects/fxbox/src/i2c_master.vhd" arg3="196"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\DD0/I2CC0/I2CM0/CMD_BYTE_R"  />
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\DD0/PS_DRV" arg1="one-hot"  />
+State machine has 9 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 000000001
+
+ 0001 -> 000000010
+
+ 0010 -> 000000100
+
+ 0011 -> 000001000
+
+ 0100 -> 000010000
+
+ 0101 -> 000100000
+
+ 0110 -> 001000000
+
+ 0111 -> 010000000
+
+ 1000 -> 100000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\DAC0/I2CM1/PS_I2CM" arg1="one-hot"  />
+State machine has 13 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000001
+
+ 0001 -> 0000000000010
+
+ 0010 -> 0000000000100
+
+ 0011 -> 0000000001000
+
+ 0100 -> 0000000010000
+
+ 0101 -> 0000000100000
+
+ 0110 -> 0000001000000
+
+ 0111 -> 0000010000000
+
+ 1000 -> 0000100000000
+
+ 1001 -> 0001000000000
+
+ 1010 -> 0010000000000
+
+ 1011 -> 0100000000000
+
+ 1100 -> 1000000000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\DD0/I2CC0/I2CM0/PS_I2CM" arg1="one-hot"  />
+State machine has 13 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000001
+
+ 0001 -> 0000000000010
+
+ 0010 -> 0000000000100
+
+ 0011 -> 0000000001000
+
+ 0100 -> 0000000010000
+
+ 0101 -> 0000000100000
+
+ 0110 -> 0000001000000
+
+ 0111 -> 0000010000000
+
+ 1000 -> 0000100000000
+
+ 1001 -> 0001000000000
+
+ 1010 -> 0010000000000
+
+ 1011 -> 0100000000000
+
+ 1100 -> 1000000000000
+
+
+
+
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DAC0/I2CM1/D_IN"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\DAC0/I2CM1/D_IN"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DD0/I2CC0/I2CM0/D_IN"  />
+    <postMsg mid="35001748" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\DD0/I2CC0/I2CM0/D_IN"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DD0/I2CC0/I2CM0/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\DD0/I2CC0/I2CM0/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\DD0/I2CC0/I2CM0/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DAC0/I2CM1/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\DAC0/I2CM1/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\DAC0/I2CM1/PS_I2CM_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="3" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="4" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="5" arg1="\DD0/PS_DRV_FSM"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="6" arg1="\DD0/PS_DRV_FSM"  />
+Duplicate register/latch removal. \I2SS/BIT_DELAY_SR is a one-to-one match with \I2SM/BIT_DELAY_SR.
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="ADC_CLIPL_P"  />
+    <postMsg mid="35002005" type="Warning" dynamic="1" navigation="0" arg0="DAC_ZEROL_P"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="\I2SM/DATA_OUT_L_BUF"  />
+Applying 38.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in box_top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="ADC_CLIPL_P" arg2="ADC_CLIPL_P"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADC_CLIPL_P"  />
+    <postMsg mid="1166052" type="Warning" dynamic="2" navigation="1" arg0="logical" arg1="DAC_ZEROL_P" arg2="DAC_ZEROL_P"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="DAC_ZEROL_P"  />
+    <postMsg mid="1163101" type="Warning" dynamic="1" navigation="0" arg0="4"  />
+
+Design Results:
+    752 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FxBox_impl1.ngd.
+
+################### Begin Area Report (box_top)######################
+Number of register bits => 424 of 7209 (5 % )
+CCU2D => 20
+DP8KC => 8
+FD1P3AX => 15
+FD1S3AX => 250
+FD1S3AY => 3
+FD1S3BX => 1
+FD1S3DX => 68
+FD1S3IX => 76
+FD1S3JX => 11
+GSR => 1
+IB => 6
+INV => 3
+L6MUX21 => 8
+LUT4 => 230
+MUX21 => 1
+OB => 18
+OSCH => 1
+PFUMX => 29
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 19
+  Net : SYS_CLK_TREE_5, loads : 199
+  Net : SYS_CLK_TREE_14, loads : 61
+  Net : DAC_LRCK_c_c, loads : 55
+  Net : I2SM/BCLK_SR, loads : 53
+  Net : I2SS/BCLK_SR_R, loads : 24
+  Net : DD0/I2CC0/I2CM0/READY_I2CM, loads : 23
+  Net : M_CLK, loads : 16
+  Net : DD0/CTR_MCLK, loads : 10
+  Net : DD0/I2CC0/I2CM0/LOAD_DATA_1, loads : 8
+  Net : DAC_BCK_c_c, loads : 8
+  Net : DD0/I2CC0/I2CM0/SYS_CLK_TREE_5_enable_2, loads : 6
+  Net : DAC0/I2CM1/SYS_CLK_TREE_5_enable_4, loads : 6
+  Net : I2SS/DAC_BCK_c_c_derived_5, loads : 5
+  Net : DD0/I2CC0/I2CM0/LOAD_ADDR, loads : 4
+  Net : DRV_RUN, loads : 3
+  Net : BTN0/IN_DEBOUNCE, loads : 1
+  Net : DAC0/DAC_DGOOD, loads : 1
+  Net : BTN1/IN_DEBOUNCE, loads : 1
+  Net : I2SS/BCLK_GATE_RELEASE, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 6
+Top 6 highest fanout Clock Enables:
+  Net : DD0/I2CC0/I2CM0/PS_I2CM_3_N_57_3, loads : 8
+  Net : DAC0/I2CM1/PS_I2CM_3_N_57_3, loads : 8
+  Net : DD0/WRITE_EN_BUF, loads : 1
+  Net : DD0/I2CC0/READ_EN_BUF, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : DAC0/n2654, loads : 45
+  Net : DD0/CTR0/CTR_DRV_1, loads : 36
+  Net : WCLK_N_175, loads : 24
+  Net : n1531, loads : 23
+  Net : DD0/CTR0/CTR_DRV_0, loads : 20
+  Net : DD0/FX_MODE_R_0, loads : 14
+  Net : DD0/FX_MODE_R_2, loads : 14
+  Net : DD0/LOAD_CTR_D_DRV_9__N_240, loads : 12
+  Net : DD0/CTR0/CTR_DRV_2, loads : 12
+  Net : DD0/I2CC0/LOAD_CTR_BUF, loads : 11
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk18 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/LOAD_ADDR]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk17 [get_nets                         |             |             |
+\DAC0/I2CM1/SYS_CLK_TREE[5]_enable_4]   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk16 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/SYS_CLK_TREE[5]_enable_|             |             |
+2]                                      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk15 [get_nets \I2SS/BCLK_SR_R]        |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk14 [get_nets                         |             |             |
+\I2SS/DAC_BCK_c_c_derived_5]            |   38.001 MHz|  200.521 MHz|     3  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk13 [get_nets \BTN0/IN_DEBOUNCE]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk12 [get_nets M_CLK]                  |   38.001 MHz|  200.280 MHz|     9  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk11 [get_nets \BTN1/IN_DEBOUNCE]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk10 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/LOAD_DATA[1]]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk9 [get_nets DAC_LRCK_c_c]            |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk8 [get_nets DAC_BCK_c_c]             |   38.001 MHz|  335.683 MHz|     2  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk7 [get_nets BCLK_GATE_RELEASE]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk6 [get_nets \DD0/I2CC0/READY_I2CM]   |   38.001 MHz|  122.880 MHz|     5  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk5 [get_nets \DD0/CTR_MCLK]           |   38.001 MHz|  141.643 MHz|     7  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk4 [get_nets DRV_RUN]                 |   38.001 MHz|  291.036 MHz|     2  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk3 [get_nets SYS_CLK_TREE[14]]        |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk2 [get_nets \DAC0/DAC_DGOOD]         |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk1 [get_nets SYS_CLK_TREE[5]]         |   38.001 MHz|  117.137 MHz|     5  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk0 [get_nets \I2SM/BCLK_SR]           |   38.001 MHz|  200.521 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 87.027  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.891  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "FxBox_impl1.ngd" -o "FxBox_impl1_map.ncd" -pr "FxBox_impl1.prf" -mp "FxBox_impl1.mrp" -lpf "C:/fpga/projects/FxBox/impl1/FxBox_impl1.lpf" -lpf "C:/fpga/projects/FxBox/FxBox.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: FxBox_impl1.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+
+    <postMsg mid="1101650" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(3): Semantic error in &quot;USE PRIMARY NET &quot;CLK_TREE[0]&quot; ;&quot;: " arg1="CLK_TREE[0]" arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="3"  />
+    <postMsg mid="1101650" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(4): Semantic error in &quot;USE PRIMARY NET &quot;CLK_TREE[5]&quot; ;&quot;: " arg1="CLK_TREE[5]" arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="4"  />
+    <postMsg mid="1101793" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(5): Semantic error in &quot;USE SECONDARY NET &quot;CLK_TREE[14]&quot; ;&quot;: " arg1="CLK_TREE[14]" arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="5"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(7): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[5]&quot; 0.400000 MHz ;&quot;: " arg1="CLK_TREE[5] matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="7"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(8): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[14]&quot; 0.001000 MHz ;&quot;: " arg1="CLK_TREE[14] matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="8"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(14): Semantic error in &quot;INPUT_SETUP PORT &quot;LEFT_IN&quot; 500000.000000 ns CLKNET &quot;CLK_TREE[14]&quot; ;&quot;: " arg1="LEFT_IN matches no ports in the design. &quot;CLK_TREE[14]&quot; matches no clknets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="14"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(15): Semantic error in &quot;INPUT_SETUP PORT &quot;RIGHT_IN&quot; 500000.000000 ns CLKNET &quot;CLK_TREE[14]&quot; ;&quot;: " arg1="RIGHT_IN matches no ports in the design. &quot;CLK_TREE[14]&quot; matches no clknets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="15"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(16): Semantic error in &quot;CLOCK_TO_OUT PORT &quot;DISP_I2C_SCL&quot; 2500.000000 ns CLKNET &quot;CLK_TREE[5]&quot; ;&quot;: " arg1="&quot;CLK_TREE[5]&quot; matches no clknets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="16"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(17): Semantic error in &quot;CLOCK_TO_OUT PORT &quot;DISP_I2C_SDA&quot; 2500.000000 ns CLKNET &quot;CLK_TREE[5]&quot; ;&quot;: " arg1="&quot;CLK_TREE[5]&quot; matches no clknets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="17"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(26): Semantic error in &quot;FREQUENCY NET &quot;CLK_TREE[0]&quot; 19.000000 MHz ;&quot;: " arg1="CLK_TREE[0] matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="26"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(32): Semantic error in &quot;INPUT_SETUP PORT &quot;DATA&quot; 29.000000 ns HOLD 39.000000 ns CLKPORT &quot;BCLK&quot; ;&quot;: " arg1="DATA matches no ports in the design. &quot;BCLK&quot; matches no clock ports in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="32"  />
+    <postMsg mid="1101121" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(33): Semantic error in &quot;INPUT_SETUP PORT &quot;DATA_IN&quot; 29.000000 ns HOLD 39.000000 ns CLKPORT &quot;BCLK_IN&quot; ;&quot;: " arg1="DATA_IN matches no ports in the design. &quot;BCLK_IN&quot; matches no clock ports in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="33"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(34): Semantic error in &quot;FREQUENCY NET &quot;WCLK_OUT_c_6&quot; 0.048000 MHz ;&quot;: " arg1="WCLK_OUT_c_6 matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="34"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(35): Semantic error in &quot;FREQUENCY NET &quot;BCLK_IN_c&quot; 6.144000 MHz ;&quot;: " arg1="BCLK_IN_c matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="35"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(36): Semantic error in &quot;FREQUENCY NET &quot;WCLK_IN_c&quot; 0.048000 MHz ;&quot;: " arg1="WCLK_IN_c matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="36"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(38): Semantic error in &quot;FREQUENCY NET &quot;I2SS/BCLK_SR_L&quot; 6.144000 MHz ;&quot;: " arg1="I2SS/BCLK_SR_L matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="38"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(40): Semantic error in &quot;FREQUENCY NET &quot;WCLK_EDGE&quot; 6.144000 MHz ;&quot;: " arg1="WCLK_EDGE matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="40"  />
+    <postMsg mid="1100523" type="Warning" dynamic="2" navigation="2" arg0="C:/fpga/projects/FxBox/FxBox.lpf(41): Semantic error in &quot;FREQUENCY NET &quot;WCLK_EDGE&quot; 6.144000 MHz ;&quot;: " arg1="WCLK_EDGE matches no clock nets in the design. " arg2="C:/fpga/projects/FxBox/FxBox.lpf" arg3="41"  />
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+
+Running general design DRC...
+
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="ADC_CLIPL_P"  />
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="DAC_ZEROL_P"  />
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="ADC_CLIPL_P"  />
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="DAC_ZEROL_P"  />
+
+
+
+Design Summary:
+   Number of registers:    424 out of  7209 (6%)
+      PFU registers:          424 out of  6864 (6%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       259 out of  3432 (8%)
+      SLICEs as Logic/ROM:    259 out of  3432 (8%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         20 out of  3432 (1%)
+   Number of LUT4s:        273 out of  6864 (4%)
+      Number used as logic LUTs:        233
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       40
+      Number used as shift registers:     0
+   Number of PIO sites used: 24 + 4(JTAG) out of 115 (24%)
+   Number of block RAMs:  8 out of 26 (31%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  19
+     Net M_CLK: 9 loads, 8 rising, 1 falling (Driver: OSC0 )
+     Net SYS_CLK_TREE[5]: 114 loads, 114 rising, 0 falling (Driver: SYS_CLK_TREE_500__i5 )
+     Net DRV_RUN: 2 loads, 2 rising, 0 falling (Driver: DRV_RUN_I_0_2_lut_3_lut )
+     Net I2SS/BCLK_GATE_RELEASE: 2 loads, 2 rising, 0 falling (Driver: I2SS/BIT_DELAY_SR )
+     Net I2SS/BCLK_SR_R: 12 loads, 12 rising, 0 falling (Driver: I2SS/i2_2_lut_3_lut )
+     Net DAC_BCK_c_c: 5 loads, 3 rising, 2 falling (Driver: PIO ADC_BCK )
+     Net DAC_BCK_c_c_derived_5: 3 loads, 3 rising, 0 falling (Driver: I2SS/i1049_2_lut_rep_26 )
+     Net DAC_LRCK_c_c: 13 loads, 1 rising, 12 falling (Driver: PIO ADC_LRCK )
+     Net SYS_CLK_TREE[14]: 30 loads, 30 rising, 0 falling (Driver: SYS_CLK_TREE_500__i14 )
+     Net BTN0/IN_DEBOUNCE: 1 loads, 1 rising, 0 falling (Driver: BTN0/i19_4_lut )
+     Net DD0/CTR_MCLK: 5 loads, 5 rising, 0 falling (Driver: DD0/i1118_3_lut )
+     Net DD0/I2CC0/READY_I2CM: 14 loads, 14 rising, 0 falling (Driver: DD0/I2CC0/I2CM0/READY_DATA_107 )
+     Net DD0/I2CC0/I2CM0/LOAD_ADDR: 1 loads, 1 rising, 0 falling (Driver: DD0/I2CC0/I2CM0/PS_I2CM_FSM_i2 )
+     Net DD0/I2CC0/I2CM0/LOAD_DATA[1]: 4 loads, 4 rising, 0 falling (Driver: DD0/I2CC0/I2CM0/LOAD_DATA_i1 )
+     Net SYS_CLK_TREE[5]_enable_2: 1 loads, 1 rising, 0 falling (Driver: DD0/I2CC0/I2CM0/i1093_2_lut_rep_21 )
+     Net I2SM/BCLK_SR: 28 loads, 28 rising, 0 falling (Driver: I2SM/i1793_2_lut )
+     Net BTN1/IN_DEBOUNCE: 1 loads, 1 rising, 0 falling (Driver: BTN1/i19_4_lut )
+     Net DAC0/DAC_DGOOD: 1 loads, 1 rising, 0 falling (Driver: DAC0/RST_WAIT_SR_i44 )
+     Net SYS_CLK_TREE[5]_enable_4: 1 loads, 1 rising, 0 falling (Driver: DAC0/I2CM1/i1070_2_lut_rep_24 )
+   Number of Clock Enables:  6
+     Net DD0/WRITE_EN_BUF: 2 loads, 0 LSLICEs
+     Net DD0/I2CC0/READ_EN_BUF: 2 loads, 0 LSLICEs
+     Net SYS_CLK_TREE[5]_enable_2: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/PS_I2CM_3_N_57_3: 3 loads, 3 LSLICEs
+     Net SYS_CLK_TREE[5]_enable_4: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/PS_I2CM_3_N_57_3: 3 loads, 3 LSLICEs
+   Number of LSRs:  24
+     Net BTN_CLR: 2 loads, 2 LSLICEs
+     Net I2SS/BIT_CTR_RST_N: 4 loads, 4 LSLICEs
+     Net DAC_LRCK_c_c: 13 loads, 13 LSLICEs
+     Net n1531: 12 loads, 12 LSLICEs
+     Net DAC_RST_N_c: 23 loads, 23 LSLICEs
+     Net DD0/LOAD_CTR_D_DRV_9__N_208: 6 loads, 6 LSLICEs
+     Net DD0/n579: 1 loads, 1 LSLICEs
+     Net DD0/n582: 1 loads, 1 LSLICEs
+     Net DD0/PS_DRV_3_N_233_0: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/PS_FRAME: 6 loads, 6 LSLICEs
+     Net DD0/I2CC0/LOAD_CTR_BUF: 6 loads, 6 LSLICEs
+     Net DD0/I2CC0/I2CM0/n859: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/CMD_BYTE_R_1: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/LOAD: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/n864: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/PS_I2CM_3_N_81_0: 1 loads, 1 LSLICEs
+     Net I2SM/READY_FLAG: 3 loads, 3 LSLICEs
+     Net I2SM/BIT_CTR_RST_N: 4 loads, 4 LSLICEs
+     Net DAC0/RUN_I2CM_N_31: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/PS_I2CM_3_N_81_0: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/LOAD: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/n708: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/n703: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/CLOCK_CT_3: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net DD0/CTR_DRV_1: 37 loads
+     Net DAC_RST_N_c: 25 loads
+     Net DD0/CTR_DRV_0: 21 loads
+     Net DD0/FX_MODE_R_0: 14 loads
+     Net DD0/FX_MODE_R_2: 14 loads
+     Net DD0/CTR_DRV_2: 13 loads
+     Net n1531: 12 loads
+     Net DD0/I2CC0/I2CM0/CLOCK_CT_2: 11 loads
+     Net DD0/I2CC0/PS_FRAME: 10 loads
+     Net DD0/LOAD_CTR_DRV: 10 loads
+ 
+
+   Number of warnings:  22
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 1 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 62 MB
+
+Dumping design to file FxBox_impl1_map.ncd.
+
+ncd2vdb "FxBox_impl1_map.ncd" ".vdbs/FxBox_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+
+trce -f "FxBox_impl1.mt" -o "FxBox_impl1.tw1" "FxBox_impl1_map.ncd" "FxBox_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file fxbox_impl1_map.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Oct 01 17:52:56 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -c -u 0 -gt -mapchkpnt 0 -sethld -o FxBox_impl1.tw1 -gui -msgset C:/fpga/projects/FxBox/promote.xml FxBox_impl1_map.ncd FxBox_impl1.prf 
+Design file:     fxbox_impl1_map.ncd
+Preference file: fxbox_impl1.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 337 paths, 12 nets, and 1463 connections (87.50% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Oct 01 17:52:57 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -c -u 0 -gt -mapchkpnt 0 -sethld -o FxBox_impl1.tw1 -gui -msgset C:/fpga/projects/FxBox/promote.xml FxBox_impl1_map.ncd FxBox_impl1.prf 
+Design file:     fxbox_impl1_map.ncd
+Preference file: fxbox_impl1.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 337 paths, 12 nets, and 1465 connections (87.62% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+mpartrce -p "FxBox_impl1.p2t" -f "FxBox_impl1.p3t" -tf "FxBox_impl1.pt" "FxBox_impl1_map.ncd" "FxBox_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "FxBox_impl1_map.ncd"
+Mon Oct 01 17:52:57 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/fpga/projects/FxBox/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=ON:clockSkewMin=2 FxBox_impl1_map.ncd FxBox_impl1.dir/5_1.ncd FxBox_impl1.prf
+Preference file: FxBox_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file FxBox_impl1_map.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   24+4(JTAG)/336     8% used
+                  24+4(JTAG)/115     24% bonded
+
+   SLICE            259/3432          7% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+   EBR                8/26           30% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 789
+Number of Connections: 1672
+
+Pin Constraint Summary:
+   24 out of 24 pins locked (100% locked).
+
+The following 6 signals are selected to use the primary clock routing resources:
+    DD0/CTR_MCLK (driver: SLICE_262, clk load #: 5)
+    SYS_CLK_TREE[5] (driver: SLICE_4, clk load #: 114)
+    SYS_CLK_TREE[14] (driver: SLICE_0, clk load #: 30)
+    I2SM/BCLK_SR (driver: I2SM/SLICE_238, clk load #: 28)
+    DD0/I2CC0/READY_I2CM (driver: DD0/I2CC0/I2CM0/SLICE_177, clk load #: 14)
+    I2SS/BCLK_SR_R (driver: SLICE_296, clk load #: 12)
+
+
+The following 5 signals are selected to use the secondary clock routing resources:
+    DAC_LRCK_c_c (driver: ADC_LRCK, clk load #: 13, sr load #: 13, ce load #: 0)
+    DAC_RST_N_c (driver: ADC0/SLICE_111, clk load #: 0, sr load #: 23, ce load #: 0)
+    M_CLK (driver: OSC0, clk load #: 9, sr load #: 0, ce load #: 0)
+    n1531 (driver: SLICE_208, clk load #: 0, sr load #: 12, ce load #: 0)
+    DAC_BCK_c_c (driver: ADC_BCK, clk load #: 5, sr load #: 0, ce load #: 0)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="DAC_LRCK_c_c" arg1="Secondary" arg2="ADC_LRCK" arg3="83" arg4="Secondary"  />
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="DAC_BCK_c_c" arg1="Secondary" arg2="ADC_BCK" arg3="86" arg4="Secondary"  />
+Signal ADC_RST_N_c_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 713250.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  712481
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 2 out of 336 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "DD0/CTR_MCLK" from F1 on comp "SLICE_262" on site "R2C19D", clk load = 5
+  PRIMARY "SYS_CLK_TREE[5]" from Q0 on comp "SLICE_4" on site "R10C9D", clk load = 114
+  PRIMARY "SYS_CLK_TREE[14]" from Q1 on comp "SLICE_0" on site "R10C10D", clk load = 30
+  PRIMARY "I2SM/BCLK_SR" from F1 on comp "I2SM/SLICE_238" on site "R21C40A", clk load = 28
+  PRIMARY "DD0/I2CC0/READY_I2CM" from Q0 on comp "DD0/I2CC0/I2CM0/SLICE_177" on site "R25C19D", clk load = 14
+  PRIMARY "I2SS/BCLK_SR_R" from F1 on comp "SLICE_296" on site "R21C2C", clk load = 12
+  SECONDARY "DAC_LRCK_c_c" from comp "ADC_LRCK" on PIO site "83 (PR17B)", clk load = 13, ce load = 0, sr load = 13
+  SECONDARY "DAC_RST_N_c" from Q0 on comp "ADC0/SLICE_111" on site "R14C20A", clk load = 0, ce load = 0, sr load = 23
+  SECONDARY "M_CLK" from OSC on comp "OSC0" on site "OSC", clk load = 9, ce load = 0, sr load = 0
+  SECONDARY "n1531" from F1 on comp "SLICE_208" on site "R14C20D", clk load = 0, ce load = 0, sr load = 12
+  SECONDARY "DAC_BCK_c_c" from comp "ADC_BCK" on PIO site "86 (PR16A)", clk load = 5, ce load = 0, sr load = 0
+
+  PRIMARY  : 6 out of 8 (75%)
+  SECONDARY: 5 out of 8 (62%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   24 + 4(JTAG) out of 336 (8.3%) PIO sites used.
+   24 + 4(JTAG) out of 115 (24.3%) bonded PIO sites used.
+   Number of PIO comps: 24; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 0 / 28 (  0%)  | -          | -         |
+| 1        | 15 / 29 ( 51%) | 2.5V       | -         |
+| 2        | 9 / 29 ( 31%)  | 2.5V       | -         |
+| 3        | 0 / 9 (  0%)   | -          | -         |
+| 4        | 0 / 10 (  0%)  | -          | -         |
+| 5        | 0 / 10 (  0%)  | -          | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file FxBox_impl1.dir/5_1.ncd.
+
+0 connections routed; 1672 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=DRV_RUN loads=2 clock_loads=2&#xA;   Signal=I2SS/BCLK_GATE_RELEASE loads=2 clock_loads=2&#xA;   Signal=DAC_BCK_c_c_derived_5 loads=3 clock_loads=3&#xA;   Signal=BTN0/IN_DEBOUNCE loads=1 clock_loads=1&#xA;   Signal=DD0/I2CC0/I2CM0/LOAD_ADDR loads=4 clock_loads=1&#xA;   Signal=DD0/I2CC0/I2CM0/LOAD_DATA[1] loads=4 clock_loads=4&#xA;   Sign   ....   lock_loads=1&#xA;   Signal=BTN1/IN_DEBOUNCE loads=1 clock_loads=1&#xA;   Signal=DAC0/DAC_DGOOD loads=1 clock_loads=1&#xA;   Signal=SYS_CLK_TREE[5]_enable_4 loads=5 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 17:53:02 10/01/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 17:53:02 10/01/18
+
+Start NBR section for initial routing at 17:53:03 10/01/18
+Level 4, iteration 1
+58(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 17:53:03 10/01/18
+Level 4, iteration 1
+45(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 6 secs 
+Level 4, iteration 2
+27(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 6 secs 
+Level 4, iteration 3
+25(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 6 secs 
+Level 4, iteration 4
+19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 6 secs 
+Level 4, iteration 5
+18(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 6
+15(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 7
+7(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 8
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 9
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 10
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 11
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 12
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 13
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 14
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 15
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 16
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 17
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+Level 4, iteration 18
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 7 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 17:53:04 10/01/18
+Level 4, iteration 0
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<hold >: 0.041ns/0.000ns; real time: 8 secs 
+Level 4, iteration 0
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.518ns/0.000ns; real time: 8 secs 
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.518ns/0.000ns; real time: 8 secs 
+
+Start NBR section for re-routing at 17:53:05 10/01/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 22.538ns/0.000ns; real time: 8 secs 
+
+Start NBR section for post-routing at 17:53:05 10/01/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack<setup> : 22.538ns
+  Timing score<setup> : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=DRV_RUN loads=2 clock_loads=2&#xA;   Signal=I2SS/BCLK_GATE_RELEASE loads=2 clock_loads=2&#xA;   Signal=DAC_BCK_c_c_derived_5 loads=3 clock_loads=3&#xA;   Signal=BTN0/IN_DEBOUNCE loads=1 clock_loads=1&#xA;   Signal=DD0/I2CC0/I2CM0/LOAD_ADDR loads=4 clock_loads=1&#xA;   Signal=DD0/I2CC0/I2CM0/LOAD_DATA[1] loads=4 clock_loads=4&#xA;   Sign   ....   lock_loads=1&#xA;   Signal=BTN1/IN_DEBOUNCE loads=1 clock_loads=1&#xA;   Signal=DAC0/DAC_DGOOD loads=1 clock_loads=1&#xA;   Signal=SYS_CLK_TREE[5]_enable_4 loads=5 clock_loads=1"  />
+
+Total CPU time 8 secs 
+Total REAL time: 9 secs 
+Completely routed.
+End of route.  1672 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file FxBox_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 22.538
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.046
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 8 secs 
+Total REAL time to completion: 9 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "FxBox_impl1.pt" -o "FxBox_impl1.twr" "FxBox_impl1.ncd" "FxBox_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Oct 01 17:53:07 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -u 0 -gt -sethld -sp 4 -sphld m -o FxBox_impl1.twr -gui -msgset C:/fpga/projects/FxBox/promote.xml FxBox_impl1.ncd FxBox_impl1.prf 
+Design file:     fxbox_impl1.ncd
+Preference file: fxbox_impl1.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 337 paths, 12 nets, and 1487 connections (88.94% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Oct 01 17:53:07 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -u 0 -gt -sethld -sp 4 -sphld m -o FxBox_impl1.twr -gui -msgset C:/fpga/projects/FxBox/promote.xml FxBox_impl1.ncd FxBox_impl1.prf 
+Design file:     fxbox_impl1.ncd
+Preference file: fxbox_impl1.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 337 paths, 12 nets, and 1487 connections (88.94% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 2 secs 
+
+iotiming  "FxBox_impl1.ncd" "FxBox_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application iotiming from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+bitgen -f "FxBox_impl1.t2b" -w "FxBox_impl1.ncd" "FxBox_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file FxBox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from FxBox_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                             38  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "FxBox_impl1.bit".

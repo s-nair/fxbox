@@ -1,0 +1,1 @@
+-w -erf C:/fpga/projects/FxBox/display_sim/compile/display_sim.erf -d C:/fpga/projects/FxBox/display_sim/compile -s C:/fpga/projects/FxBox/display_sim/library.cfg -j C:/fpga/projects/FxBox/display_sim/projlib.cfg -work work -O3 -e 100 -work work -2002 C:/fpga/projects/FxBox/display_sim/../src/input_handler.vhd 

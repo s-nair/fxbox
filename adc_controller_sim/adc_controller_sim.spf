@@ -1,0 +1,9 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="adc_controller_sim" simType="Active-HDL">
+    <Source worklib="work" path="src/pkg/fxbox_pkg.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="adc_controller.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="adc_controller_tb.vhd" type="VHDL" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="testbench"/>
+</BaliSimProject>

@@ -1,0 +1,635 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Oct 01 17:52:51 2018
+
+
+Command Line:  synthesis -f FxBox_impl1_lattice.synproj -gui -msgset C:/fpga/projects/FxBox/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = box_top.
+Target frequency = 38.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/fpga/projects/FxBox/impl1 (searchpath added)
+-p C:/fpga/projects/FxBox (searchpath added)
+VHDL library = work
+VHDL design file = C:/fpga/projects/FxBox/src/pkg/fxbox_pkg.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/box_top.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/adc_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dac_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dsp_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/dsp_normalize.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2s_master.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2s_slave.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/display_driver.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2c_controller.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/i2c_master.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/input_handler.vhd
+VHDL design file = C:/fpga/projects/FxBox/src/clock_tree.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/ascii_table.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/ascii_table.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_clean.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_echo.vhd
+VHDL design file = C:/fpga/projects/FxBox/rom/screen_echo.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+VHDL design file = C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd
+NGD file = FxBox_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/fpga/projects/FxBox/impl1". VHDL-1504
+Analyzing VHDL file c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(5): analyzing package fxbox_pkg. VHDL-1014
+INFO - synthesis: c:/fpga/projects/fxbox/src/pkg/fxbox_pkg.vhd(65): analyzing package body fxbox_pkg. VHDL-1013
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/box_top.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/box_top.vhd(12): analyzing entity box_top. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/box_top.vhd(45): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/adc_controller.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/adc_controller.vhd(12): analyzing entity adc_controller. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/adc_controller.vhd(27): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dac_controller.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/dac_controller.vhd(11): analyzing entity dac_controller. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/dac_controller.vhd(20): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dsp_clean.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/dsp_clean.vhd(11): analyzing entity dsp_clean. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/dsp_clean.vhd(19): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/dsp_normalize.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/dsp_normalize.vhd(19): analyzing entity dsp_normalize. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/dsp_normalize.vhd(27): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2s_master.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2s_master.vhd(26): analyzing entity i2s_master. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2s_master.vhd(39): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2s_slave.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2s_slave.vhd(26): analyzing entity i2s_slave. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2s_slave.vhd(39): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/display_driver.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/display_driver.vhd(12): analyzing entity display_driver. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/display_driver.vhd(22): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2c_controller.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2c_controller.vhd(12): analyzing entity i2c_controller. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2c_controller.vhd(25): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/i2c_master.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(51): analyzing entity i2c_master. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(66): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/input_handler.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/input_handler.vhd(9): analyzing entity input_handler. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/input_handler.vhd(17): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/src/clock_tree.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/src/clock_tree.vhd(86): analyzing entity clock_tree. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/src/clock_tree.vhd(94): analyzing architecture rtl. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/ascii_table.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): analyzing entity ascii_table. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/ascii_table.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/ascii_table.vhd(14): analyzing entity ascii_table. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/ascii_table.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_clean.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): analyzing entity screen_clean. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_clean.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_clean.vhd(14): analyzing entity screen_clean. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_clean.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_reverb.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): analyzing entity screen_reverb. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_reverb.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_reverb.vhd(14): analyzing entity screen_reverb. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_reverb.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_echo.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): analyzing entity screen_echo. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/rom/screen_echo.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_echo.vhd(14): analyzing entity screen_echo. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/rom/screen_echo.vhd(23): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/ram_data.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): analyzing entity ram_data. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/ram_data.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/ram_data.vhd(14): analyzing entity ram_data. VHDL-1012
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/ram_data.vhd(28): analyzing architecture structure. VHDL-1010
+unit box_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd. VHDL-1481
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(56): analyzing package math_real. VHDL-1014
+INFO - synthesis: c:/fpga/projects/fxbox/pdpram/._real_._math_.vhd(685): analyzing package body math_real. VHDL-1013
+unit box_top is not yet analyzed. VHDL-1485
+unit box_top is not yet analyzed. VHDL-1485
+c:/fpga/projects/fxbox/src/box_top.vhd(12): executing box_top(rtl)
+
+WARNING - synthesis: c:/fpga/projects/fxbox/src/box_top.vhd(43): replacing existing netlist box_top(rtl). VHDL-1205
+Top module name (VHDL): box_top
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = box_top.
+WARNING - synthesis: I/O Port ADC_CLIPL_P 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DAC_ZEROL_P 's net has no driver and is unused.
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2s_master.vhd(213): Register \I2SM/DATA_OUT_R_BUF_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(170): Register \DAC0/I2CM1/ADDR_BYTE_R_i7 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(183): Register \DAC0/I2CM1/CMD_BYTE_R_i7 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(196): Register \DAC0/I2CM1/DATA_BYTE_R_i7 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(170): Register \DAC0/I2CM1/ADDR_BYTE_R_i4 is stuck at One. VDB-5014
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(183): Register \DAC0/I2CM1/CMD_BYTE_R_i6 is stuck at One. VDB-5014
+WARNING - synthesis: c:/fpga/projects/fxbox/src/i2c_master.vhd(196): Register \DAC0/I2CM1/DATA_BYTE_R_i2 is stuck at One. VDB-5014
+WARNING - synthesis: Bit 7 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \DD0/I2CC0/I2CM0/CMD_BYTE_R is stuck at Zero
+INFO - synthesis: Extracted state machine for register '\DD0/PS_DRV' with one-hot encoding
+State machine has 9 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 000000001
+
+ 0001 -> 000000010
+
+ 0010 -> 000000100
+
+ 0011 -> 000001000
+
+ 0100 -> 000010000
+
+ 0101 -> 000100000
+
+ 0110 -> 001000000
+
+ 0111 -> 010000000
+
+ 1000 -> 100000000
+
+INFO - synthesis: Extracted state machine for register '\DAC0/I2CM1/PS_I2CM' with one-hot encoding
+State machine has 13 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000001
+
+ 0001 -> 0000000000010
+
+ 0010 -> 0000000000100
+
+ 0011 -> 0000000001000
+
+ 0100 -> 0000000010000
+
+ 0101 -> 0000000100000
+
+ 0110 -> 0000001000000
+
+ 0111 -> 0000010000000
+
+ 1000 -> 0000100000000
+
+ 1001 -> 0001000000000
+
+ 1010 -> 0010000000000
+
+ 1011 -> 0100000000000
+
+ 1100 -> 1000000000000
+
+INFO - synthesis: Extracted state machine for register '\DD0/I2CC0/I2CM0/PS_I2CM' with one-hot encoding
+State machine has 13 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000001
+
+ 0001 -> 0000000000010
+
+ 0010 -> 0000000000100
+
+ 0011 -> 0000000001000
+
+ 0100 -> 0000000010000
+
+ 0101 -> 0000000100000
+
+ 0110 -> 0000001000000
+
+ 0111 -> 0000010000000
+
+ 1000 -> 0000100000000
+
+ 1001 -> 0001000000000
+
+ 1010 -> 0010000000000
+
+ 1011 -> 0100000000000
+
+ 1100 -> 1000000000000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \DAC0/I2CM1/D_IN is stuck at One
+WARNING - synthesis: Bit 1 of Register \DAC0/I2CM1/D_IN is stuck at One
+WARNING - synthesis: Bit 0 of Register \DD0/I2CC0/I2CM0/D_IN is stuck at One
+WARNING - synthesis: Bit 1 of Register \DD0/I2CC0/I2CM0/D_IN is stuck at One
+WARNING - synthesis: Bit 0 of Register \DD0/I2CC0/I2CM0/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \DD0/I2CC0/I2CM0/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \DD0/I2CC0/I2CM0/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \DAC0/I2CM1/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \DAC0/I2CM1/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \DAC0/I2CM1/PS_I2CM_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \DD0/PS_DRV_FSM is stuck at Zero
+WARNING - synthesis: Bit 6 of Register \DD0/PS_DRV_FSM is stuck at Zero
+Duplicate register/latch removal. \I2SS/BIT_DELAY_SR is a one-to-one match with \I2SM/BIT_DELAY_SR.
+WARNING - synthesis: I/O Port ADC_CLIPL_P 's net has no driver and is unused.
+WARNING - synthesis: I/O Port DAC_ZEROL_P 's net has no driver and is unused.
+WARNING - synthesis: Bit 23 of Register \I2SM/DATA_OUT_L_BUF is stuck at Zero
+Applying 38.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in box_top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'ADC_CLIPL_P' has no load.
+WARNING - synthesis: input pad net 'ADC_CLIPL_P' has no legal load.
+WARNING - synthesis: logical net 'DAC_ZEROL_P' has no load.
+WARNING - synthesis: input pad net 'DAC_ZEROL_P' has no legal load.
+WARNING - synthesis: DRC complete with 4 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FxBox_impl1.ngd.
+
+################### Begin Area Report (box_top)######################
+Number of register bits => 424 of 7209 (5 % )
+CCU2D => 20
+DP8KC => 8
+FD1P3AX => 15
+FD1S3AX => 250
+FD1S3AY => 3
+FD1S3BX => 1
+FD1S3DX => 68
+FD1S3IX => 76
+FD1S3JX => 11
+GSR => 1
+IB => 6
+INV => 3
+L6MUX21 => 8
+LUT4 => 230
+MUX21 => 1
+OB => 18
+OSCH => 1
+PFUMX => 29
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 19
+  Net : SYS_CLK_TREE_5, loads : 199
+  Net : SYS_CLK_TREE_14, loads : 61
+  Net : DAC_LRCK_c_c, loads : 55
+  Net : I2SM/BCLK_SR, loads : 53
+  Net : I2SS/BCLK_SR_R, loads : 24
+  Net : DD0/I2CC0/I2CM0/READY_I2CM, loads : 23
+  Net : M_CLK, loads : 16
+  Net : DD0/CTR_MCLK, loads : 10
+  Net : DD0/I2CC0/I2CM0/LOAD_DATA_1, loads : 8
+  Net : DAC_BCK_c_c, loads : 8
+  Net : DD0/I2CC0/I2CM0/SYS_CLK_TREE_5_enable_2, loads : 6
+  Net : DAC0/I2CM1/SYS_CLK_TREE_5_enable_4, loads : 6
+  Net : I2SS/DAC_BCK_c_c_derived_5, loads : 5
+  Net : DD0/I2CC0/I2CM0/LOAD_ADDR, loads : 4
+  Net : DRV_RUN, loads : 3
+  Net : BTN0/IN_DEBOUNCE, loads : 1
+  Net : DAC0/DAC_DGOOD, loads : 1
+  Net : BTN1/IN_DEBOUNCE, loads : 1
+  Net : I2SS/BCLK_GATE_RELEASE, loads : 2
+Clock Enable Nets
+Number of Clock Enables: 6
+Top 6 highest fanout Clock Enables:
+  Net : DD0/I2CC0/I2CM0/PS_I2CM_3_N_57_3, loads : 8
+  Net : DAC0/I2CM1/PS_I2CM_3_N_57_3, loads : 8
+  Net : DD0/WRITE_EN_BUF, loads : 1
+  Net : DD0/I2CC0/READ_EN_BUF, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : DAC0/n2654, loads : 45
+  Net : DD0/CTR0/CTR_DRV_1, loads : 36
+  Net : WCLK_N_175, loads : 24
+  Net : n1531, loads : 23
+  Net : DD0/CTR0/CTR_DRV_0, loads : 20
+  Net : DD0/FX_MODE_R_0, loads : 14
+  Net : DD0/FX_MODE_R_2, loads : 14
+  Net : DD0/LOAD_CTR_D_DRV_9__N_240, loads : 12
+  Net : DD0/CTR0/CTR_DRV_2, loads : 12
+  Net : DD0/I2CC0/LOAD_CTR_BUF, loads : 11
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk18 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/LOAD_ADDR]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk17 [get_nets                         |             |             |
+\DAC0/I2CM1/SYS_CLK_TREE[5]_enable_4]   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk16 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/SYS_CLK_TREE[5]_enable_|             |             |
+2]                                      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk15 [get_nets \I2SS/BCLK_SR_R]        |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk14 [get_nets                         |             |             |
+\I2SS/DAC_BCK_c_c_derived_5]            |   38.001 MHz|  200.521 MHz|     3  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk13 [get_nets \BTN0/IN_DEBOUNCE]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk12 [get_nets M_CLK]                  |   38.001 MHz|  200.280 MHz|     9  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk11 [get_nets \BTN1/IN_DEBOUNCE]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk10 [get_nets                         |             |             |
+\DD0/I2CC0/I2CM0/LOAD_DATA[1]]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk9 [get_nets DAC_LRCK_c_c]            |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk8 [get_nets DAC_BCK_c_c]             |   38.001 MHz|  335.683 MHz|     2  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk7 [get_nets BCLK_GATE_RELEASE]       |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk6 [get_nets \DD0/I2CC0/READY_I2CM]   |   38.001 MHz|  122.880 MHz|     5  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk5 [get_nets \DD0/CTR_MCLK]           |   38.001 MHz|  141.643 MHz|     7  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk4 [get_nets DRV_RUN]                 |   38.001 MHz|  291.036 MHz|     2  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk3 [get_nets SYS_CLK_TREE[14]]        |   38.001 MHz|  554.939 MHz|     1  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk2 [get_nets \DAC0/DAC_DGOOD]         |            -|            -|     0  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk1 [get_nets SYS_CLK_TREE[5]]         |   38.001 MHz|  117.137 MHz|     5  
+                                        |             |             |
+create_clock -period 26.315789 -name    |             |             |
+clk0 [get_nets \I2SM/BCLK_SR]           |   38.001 MHz|  200.521 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 87.027  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.891  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

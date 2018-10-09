@@ -1,0 +1,3 @@
+.\..\src\pkg\fxbox_pkg.vhd
+.\..\i2s_slave.vhd
+.\..\i2s_slave_tb.vhd

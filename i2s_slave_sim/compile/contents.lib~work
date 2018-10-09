@@ -1,0 +1,5 @@
+3
+~E 1 "./../../i2s_slave.vhd" 26 i2s_slave
+~A 1 "./../../i2s_slave.vhd" 39 rtl
+~E 1 "./../../i2s_slave_tb.vhd" 8 testbench
+~A 1 "./../../i2s_slave_tb.vhd" 11 tb

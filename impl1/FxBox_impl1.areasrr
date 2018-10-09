@@ -1,0 +1,187 @@
+----------------------------------------------------------------------
+Report for cell disp_drv_test.rtl
+
+Register bits: 129 of 6864 (2%)
+PIC Latch:       0
+I/O cells:       3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       32       100.0
+                              DP8KC        6       100.0
+                            FD1P3AX       43       100.0
+                            FD1S3AX       42       100.0
+                            FD1S3IX       37       100.0
+                            FD1S3JX        6       100.0
+                                GSR        1       100.0
+                                 IB        1       100.0
+                                INV        9       100.0
+                            L6MUX21        9       100.0
+                                 OB        2       100.0
+                           OFS1P3JX        1       100.0
+                           ORCALUT4      116       100.0
+                               OSCH        1       100.0
+                              PFUMX       26       100.0
+                                PUR        1       100.0
+                                VHI       11       100.0
+                                VLO       11       100.0
+SUB MODULES 
+                        ascii_table        1       100.0
+                      clock_tree_10        1       100.0
+                      clock_tree_11        1       100.0
+                      clock_tree_15        1       100.0
+                       clock_tree_5        1       100.0
+                     display_driver        1       100.0
+                 i2c_controller_ram        1       100.0
+                         i2c_master        1       100.0
+                           ram_data        1       100.0
+                       screen_clean        1       100.0
+                            
+                         TOTAL           365           
+----------------------------------------------------------------------
+Report for cell display_driver.netlist
+     Instance path:  DD0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       16        50.0
+                              DP8KC        6       100.0
+                            FD1P3AX       43       100.0
+                            FD1S3AX       27        64.3
+                            FD1S3IX       37       100.0
+                            FD1S3JX        6       100.0
+                                INV        8        88.9
+                            L6MUX21        9       100.0
+                           ORCALUT4      114        98.3
+                              PFUMX       26       100.0
+                                VHI        9        81.8
+                                VLO        9        81.8
+SUB MODULES 
+                        ascii_table        1       100.0
+                      clock_tree_10        1       100.0
+                      clock_tree_11        1       100.0
+                       clock_tree_5        1       100.0
+                 i2c_controller_ram        1       100.0
+                         i2c_master        1       100.0
+                           ram_data        1       100.0
+                       screen_clean        1       100.0
+                            
+                         TOTAL           318           
+----------------------------------------------------------------------
+Report for cell clock_tree_10.netlist
+     Instance path:  DD0.CTR0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        6        18.8
+                            FD1P3AX       10        23.3
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL            18           
+----------------------------------------------------------------------
+Report for cell screen_clean.netlist
+     Instance path:  DD0.ROM1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              DP8KC        1        16.7
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell ascii_table.netlist
+     Instance path:  DD0.ROM0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              DP8KC        4        66.7
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell i2c_controller_ram.netlist
+     Instance path:  DD0.I2CC0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       10        31.3
+                              DP8KC        1        16.7
+                            FD1P3AX       32        74.4
+                            FD1S3AX       22        52.4
+                            FD1S3IX        4        10.8
+                            FD1S3JX        4        66.7
+                                INV        6        66.7
+                            L6MUX21        1        11.1
+                           ORCALUT4       59        50.9
+                              PFUMX        7        26.9
+                                VHI        5        45.5
+                                VLO        5        45.5
+SUB MODULES 
+                      clock_tree_11        1       100.0
+                       clock_tree_5        1       100.0
+                         i2c_master        1       100.0
+                           ram_data        1       100.0
+                            
+                         TOTAL           160           
+----------------------------------------------------------------------
+Report for cell clock_tree_11.netlist
+     Instance path:  DD0.I2CC0.CTR0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        7        21.9
+                            FD1P3AX       11        25.6
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL            20           
+----------------------------------------------------------------------
+Report for cell ram_data.netlist
+     Instance path:  DD0.I2CC0.BUF0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              DP8KC        1        16.7
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell i2c_master.netlist
+     Instance path:  DD0.I2CC0.I2CM0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        3         9.4
+                            FD1P3AX        9        20.9
+                            FD1S3AX       19        45.2
+                            FD1S3IX        3         8.1
+                            FD1S3JX        2        33.3
+                                INV        5        55.6
+                            L6MUX21        1        11.1
+                           ORCALUT4       45        38.8
+                              PFUMX        7        26.9
+                                VHI        2        18.2
+                                VLO        2        18.2
+SUB MODULES 
+                       clock_tree_5        1       100.0
+                            
+                         TOTAL            99           
+----------------------------------------------------------------------
+Report for cell clock_tree_5.netlist
+     Instance path:  DD0.I2CC0.I2CM0.CT0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        3         9.4
+                            FD1S3AX        5        11.9
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL            10           
+----------------------------------------------------------------------
+Report for cell clock_tree_15.netlist
+     Instance path:  CTR0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       16        50.0
+                            FD1S3AX       15        35.7
+                                INV        1        11.1
+                           ORCALUT4        2         1.7
+                                VHI        1         9.1
+                                VLO        1         9.1
+                            
+                         TOTAL            36           

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="ram_data" module="ram_data" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 05 18 20:57:29.157" version="6.5" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2018 05 18 20:57:28.989"/>
+		<File name="c:/fpga/projects/fxbox/pdpram/mem/init_ram.mem" type="mem" modified="2018 05 05 18:57:20.415"/>
+		<File name="ram_data.lpc" type="lpc" modified="2018 05 18 20:57:26.836"/>
+		<File name="ram_data.vhd" type="top_level_vhdl" modified="2018 05 18 20:57:26.933"/>
+		<File name="ram_data_tmpl.vhd" type="template_vhdl" modified="2018 05 18 20:57:26.937"/>
+		<File name="tb_ram_data_tmpl.vhd" type="testbench_vhdl" modified="2018 05 18 20:57:26.968"/>
+  </Package>
+</DiamondModule>

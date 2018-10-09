@@ -1,0 +1,50 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+adc_controller_sim=.\adc_controller_sim\adc_controller_sim.lib
+work=.\work\work.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+adc_controller_sim=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\src\pkg\fxbox_pkg.vhd=-1
+/..\..\adc_controller.vhd=-1
+/..\..\adc_controller_tb.vhd=-1
+[Files.Data]
+.\..\src\pkg\fxbox_pkg.vhd=VHDL Source Code
+.\..\adc_controller.vhd=VHDL Source Code
+.\..\adc_controller_tb.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=testbench|tb|0 
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="ascii_table" module="ascii_table" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 05 18 20:57:55.406" version="5.4" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2018 05 18 20:57:55.246"/>
+		<File name="ascii_table.lpc" type="lpc" modified="2018 05 18 20:57:53.675"/>
+		<File name="ascii_table.vhd" type="top_level_vhdl" modified="2018 05 18 20:57:53.768"/>
+		<File name="ascii_table_tmpl.vhd" type="template_vhdl" modified="2018 05 18 20:57:53.779"/>
+		<File name="c:/fpga/projects/fxbox/rom/mem/ascii_table_rom.mem" type="mem" modified="2018 05 12 21:44:29.929"/>
+		<File name="tb_ascii_table_tmpl.vhd" type="testbench_vhdl" modified="2018 05 18 20:57:53.806"/>
+  </Package>
+</DiamondModule>

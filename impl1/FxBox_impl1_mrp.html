@@ -1,0 +1,658 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+           Lattice Mapping Report File for Design Module 'box_top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     FxBox_impl1.ngd -o FxBox_impl1_map.ncd -pr FxBox_impl1.prf -mp
+     FxBox_impl1.mrp -lpf C:/fpga/projects/FxBox/impl1/FxBox_impl1.lpf -lpf
+     C:/fpga/projects/FxBox/FxBox.lpf -c 0 -gui -msgset
+     C:/fpga/projects/FxBox/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  10/01/18  17:52:54
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    424 out of  7209 (6%)
+      PFU registers:          424 out of  6864 (6%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:       259 out of  3432 (8%)
+      SLICEs as Logic/ROM:    259 out of  3432 (8%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         20 out of  3432 (1%)
+   Number of LUT4s:        273 out of  6864 (4%)
+      Number used as logic LUTs:        233
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       40
+      Number used as shift registers:     0
+   Number of PIO sites used: 24 + 4(JTAG) out of 115 (24%)
+   Number of block RAMs:  8 out of 26 (31%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  19
+     Net M_CLK: 9 loads, 8 rising, 1 falling (Driver: OSC0 )
+     Net SYS_CLK_TREE[5]: 114 loads, 114 rising, 0 falling (Driver:
+     SYS_CLK_TREE_500__i5 )
+
+     Net DRV_RUN: 2 loads, 2 rising, 0 falling (Driver: DRV_RUN_I_0_2_lut_3_lut
+     )
+     Net I2SS/BCLK_GATE_RELEASE: 2 loads, 2 rising, 0 falling (Driver:
+     I2SS/BIT_DELAY_SR )
+     Net I2SS/BCLK_SR_R: 12 loads, 12 rising, 0 falling (Driver:
+     I2SS/i2_2_lut_3_lut )
+     Net DAC_BCK_c_c: 5 loads, 3 rising, 2 falling (Driver: PIO ADC_BCK )
+     Net DAC_BCK_c_c_derived_5: 3 loads, 3 rising, 0 falling (Driver:
+     I2SS/i1049_2_lut_rep_26 )
+     Net DAC_LRCK_c_c: 13 loads, 1 rising, 12 falling (Driver: PIO ADC_LRCK )
+     Net SYS_CLK_TREE[14]: 30 loads, 30 rising, 0 falling (Driver:
+     SYS_CLK_TREE_500__i14 )
+     Net BTN0/IN_DEBOUNCE: 1 loads, 1 rising, 0 falling (Driver: BTN0/i19_4_lut
+     )
+     Net DD0/CTR_MCLK: 5 loads, 5 rising, 0 falling (Driver: DD0/i1118_3_lut )
+     Net DD0/I2CC0/READY_I2CM: 14 loads, 14 rising, 0 falling (Driver:
+     DD0/I2CC0/I2CM0/READY_DATA_107 )
+     Net DD0/I2CC0/I2CM0/LOAD_ADDR: 1 loads, 1 rising, 0 falling (Driver:
+     DD0/I2CC0/I2CM0/PS_I2CM_FSM_i2 )
+     Net DD0/I2CC0/I2CM0/LOAD_DATA[1]: 4 loads, 4 rising, 0 falling (Driver:
+     DD0/I2CC0/I2CM0/LOAD_DATA_i1 )
+     Net SYS_CLK_TREE[5]_enable_2: 1 loads, 1 rising, 0 falling (Driver:
+     DD0/I2CC0/I2CM0/i1093_2_lut_rep_21 )
+     Net I2SM/BCLK_SR: 28 loads, 28 rising, 0 falling (Driver: I2SM/i1793_2_lut
+     )
+     Net BTN1/IN_DEBOUNCE: 1 loads, 1 rising, 0 falling (Driver: BTN1/i19_4_lut
+     )
+     Net DAC0/DAC_DGOOD: 1 loads, 1 rising, 0 falling (Driver:
+     DAC0/RST_WAIT_SR_i44 )
+     Net SYS_CLK_TREE[5]_enable_4: 1 loads, 1 rising, 0 falling (Driver:
+     DAC0/I2CM1/i1070_2_lut_rep_24 )
+   Number of Clock Enables:  6
+     Net DD0/WRITE_EN_BUF: 2 loads, 0 LSLICEs
+     Net DD0/I2CC0/READ_EN_BUF: 2 loads, 0 LSLICEs
+     Net SYS_CLK_TREE[5]_enable_2: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/PS_I2CM_3_N_57_3: 3 loads, 3 LSLICEs
+     Net SYS_CLK_TREE[5]_enable_4: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/PS_I2CM_3_N_57_3: 3 loads, 3 LSLICEs
+   Number of LSRs:  24
+     Net BTN_CLR: 2 loads, 2 LSLICEs
+     Net I2SS/BIT_CTR_RST_N: 4 loads, 4 LSLICEs
+     Net DAC_LRCK_c_c: 13 loads, 13 LSLICEs
+     Net n1531: 12 loads, 12 LSLICEs
+     Net DAC_RST_N_c: 23 loads, 23 LSLICEs
+     Net DD0/LOAD_CTR_D_DRV_9__N_208: 6 loads, 6 LSLICEs
+     Net DD0/n579: 1 loads, 1 LSLICEs
+     Net DD0/n582: 1 loads, 1 LSLICEs
+     Net DD0/PS_DRV_3_N_233_0: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/PS_FRAME: 6 loads, 6 LSLICEs
+     Net DD0/I2CC0/LOAD_CTR_BUF: 6 loads, 6 LSLICEs
+     Net DD0/I2CC0/I2CM0/n859: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/CMD_BYTE_R_1: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/LOAD: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/n864: 1 loads, 1 LSLICEs
+     Net DD0/I2CC0/I2CM0/PS_I2CM_3_N_81_0: 1 loads, 1 LSLICEs
+     Net I2SM/READY_FLAG: 3 loads, 3 LSLICEs
+
+     Net I2SM/BIT_CTR_RST_N: 4 loads, 4 LSLICEs
+     Net DAC0/RUN_I2CM_N_31: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/PS_I2CM_3_N_81_0: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/LOAD: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/n708: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/n703: 1 loads, 1 LSLICEs
+     Net DAC0/I2CM1/CLOCK_CT_3: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net DD0/CTR_DRV_1: 37 loads
+     Net DAC_RST_N_c: 25 loads
+     Net DD0/CTR_DRV_0: 21 loads
+     Net DD0/FX_MODE_R_0: 14 loads
+     Net DD0/FX_MODE_R_2: 14 loads
+     Net DD0/CTR_DRV_2: 13 loads
+     Net n1531: 12 loads
+     Net DD0/I2CC0/I2CM0/CLOCK_CT_2: 11 loads
+     Net DD0/I2CC0/PS_FRAME: 10 loads
+     Net DD0/LOAD_CTR_DRV: 10 loads
+
+
+
+
+   Number of warnings:  22
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(3): Semantic error in "USE
+     PRIMARY NET "CLK_TREE[0]" ;": CLK_TREE[0] does not match nets in the
+     design. This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(4): Semantic error in "USE
+     PRIMARY NET "CLK_TREE[5]" ;": CLK_TREE[5] does not match nets in the
+     design. This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(5): Semantic error in "USE
+     SECONDARY NET "CLK_TREE[14]" ;": CLK_TREE[14] does not match nets in the
+     design. This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(7): Semantic error in "FREQUENCY
+     NET "CLK_TREE[5]" 0.400000 MHz ;": CLK_TREE[5] matches no clock nets in the
+     design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(8): Semantic error in "FREQUENCY
+     NET "CLK_TREE[14]" 0.001000 MHz ;": CLK_TREE[14] matches no clock nets in
+     the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(14): Semantic error in
+     "INPUT_SETUP PORT "LEFT_IN" 500000.000000 ns CLKNET "CLK_TREE[14]" ;":
+     LEFT_IN matches no ports in the design. "CLK_TREE[14]" matches no clknets
+     in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(15): Semantic error in
+     "INPUT_SETUP PORT "RIGHT_IN" 500000.000000 ns CLKNET "CLK_TREE[14]" ;":
+     RIGHT_IN matches no ports in the design. "CLK_TREE[14]" matches no clknets
+     in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(16): Semantic error in
+     "CLOCK_TO_OUT PORT "DISP_I2C_SCL" 2500.000000 ns CLKNET "CLK_TREE[5]" ;":
+     "CLK_TREE[5]" matches no clknets in the design.  This preference has been
+
+     disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(17): Semantic error in
+     "CLOCK_TO_OUT PORT "DISP_I2C_SDA" 2500.000000 ns CLKNET "CLK_TREE[5]" ;":
+     "CLK_TREE[5]" matches no clknets in the design.  This preference has been
+     disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(26): Semantic error in
+     "FREQUENCY NET "CLK_TREE[0]" 19.000000 MHz ;": CLK_TREE[0] matches no clock
+     nets in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(32): Semantic error in
+     "INPUT_SETUP PORT "DATA" 29.000000 ns HOLD 39.000000 ns CLKPORT "BCLK" ;":
+     DATA matches no ports in the design. "BCLK" matches no clock ports in the
+     design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(33): Semantic error in
+     "INPUT_SETUP PORT "DATA_IN" 29.000000 ns HOLD 39.000000 ns CLKPORT
+     "BCLK_IN" ;": DATA_IN matches no ports in the design. "BCLK_IN" matches no
+     clock ports in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(34): Semantic error in
+     "FREQUENCY NET "WCLK_OUT_c_6" 0.048000 MHz ;": WCLK_OUT_c_6 matches no
+     clock nets in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(35): Semantic error in
+     "FREQUENCY NET "BCLK_IN_c" 6.144000 MHz ;": BCLK_IN_c matches no clock nets
+     in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(36): Semantic error in
+     "FREQUENCY NET "WCLK_IN_c" 0.048000 MHz ;": WCLK_IN_c matches no clock nets
+     in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(38): Semantic error in
+     "FREQUENCY NET "I2SS/BCLK_SR_L" 6.144000 MHz ;": I2SS/BCLK_SR_L matches no
+     clock nets in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(40): Semantic error in
+     "FREQUENCY NET "WCLK_EDGE" 6.144000 MHz ;": WCLK_EDGE matches no clock nets
+     in the design.  This preference has been disabled.
+WARNING - map: C:/fpga/projects/FxBox/FxBox.lpf(41): Semantic error in
+     "FREQUENCY NET "WCLK_EDGE" 6.144000 MHz ;": WCLK_EDGE matches no clock nets
+     in the design.  This preference has been disabled.
+WARNING - map: input pad net 'ADC_CLIPL_P' has no legal load.
+WARNING - map: input pad net 'DAC_ZEROL_P' has no legal load.
+WARNING - map: IO buffer missing for top level port ADC_CLIPL_P...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port DAC_ZEROL_P...logic will be
+     discarded.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| ADC_FS1             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_FS0             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_FS2             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_FMT0            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| ADC_FMT1            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_SM              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_SCK             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DISP_I2C_SCL        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DISP_I2C_SDA        | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_HPFD_P          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_RST_N           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_SCK             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_BCK             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_LRCK            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_DATA            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_I2C_SCL         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_I2C_SDA         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| DAC_RST_N           | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| BTN_LEFT_IN         | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| BTN_RIGHT_IN        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_BCK             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_LRCK            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC_DATA            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| RESET               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal WCLK_N_175 was merged into signal DAC_LRCK_c_c
+Signal M_CLK_N_25 was merged into signal M_CLK
+Signal BCLK_N_118 was merged into signal DAC_BCK_c_c
+Signal DAC0/I2CM1/n2651 was merged into signal DAC0/I2CM1/CLOCK_CT_3
+Signal DAC0/n2654 was merged into signal DAC_RST_N_c
+Signal READY_FLAG_N_120 was merged into signal I2SM/READY_FLAG
+Signal I2SM/BIT_CTR_RST_N_N_182 was merged into signal I2SM/BIT_CTR_RST_N
+Signal DD0/I2CC0/I2CM0/n1532 was merged into signal DD0/I2CC0/I2CM0/CMD_BYTE_R_1
+     
+Signal DD0/I2CC0/n2652 was merged into signal DD0/PS_DRV_3_N_233_0
+Signal DD0/I2CC0/PS_FRAME_N_254 was merged into signal DD0/I2CC0/PS_FRAME
+Signal I2SS/BIT_CTR_RST_N_N_114 was merged into signal I2SS/BIT_CTR_RST_N
+
+Signal DD0/CTR0/CLOCK_R_504_add_4_11/S1 undriven or does not drive anything -
+     clipped.
+Signal DD0/CTR0/CLOCK_R_504_add_4_11/CO undriven or does not drive anything -
+     clipped.
+Signal DD0/CTR0/CLOCK_R_504_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal DD0/CTR0/CLOCK_R_504_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal DD0/I2CC0/CTR0/CLOCK_R_506_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal DD0/I2CC0/CTR0/CLOCK_R_506_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal DD0/I2CC0/CTR0/CLOCK_R_506_add_4_11/CO undriven or does not drive
+     anything - clipped.
+Signal SYS_CLK_TREE_500_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal SYS_CLK_TREE_500_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal SYS_CLK_TREE_500_add_4_15/CO undriven or does not drive anything -
+     clipped.
+Block i2095 was optimized away.
+Block i2094 was optimized away.
+Block i2096 was optimized away.
+Block DAC0/I2CM1/i524_1_lut_rep_22 was optimized away.
+Block DAC0/MRST_N_I_0_1_lut_rep_25 was optimized away.
+Block I2SM/READY_FLAG_I_0_1_lut was optimized away.
+Block I2SM/BIT_CTR_RST_N_I_0_1_lut was optimized away.
+Block DD0/I2CC0/I2CM0/i883_1_lut was optimized away.
+Block DD0/I2CC0/RESET_I_0_1_lut_rep_23 was optimized away.
+Block DD0/I2CC0/PS_FRAME_I_0_1_lut was optimized away.
+Block I2SS/BIT_CTR_RST_N_I_0_1_lut was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /DD0/I2CC0/BUF0:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR ram_data_0_0_0:  TYPE= DP8KC,  Width_B= 8,  Depth_A= 1024,
+         Depth_B= 1024,  REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= init_ram.mem,  MEM_LPC_FILE= ram_data.lpc
+         
+/DD0/ROM0:
+    EBRs: 4
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR ascii_table_0_3_0:  TYPE= DP8KC,  Width_A= 9,  Width_B= 1,
+         Depth_A= 128,  Depth_B= 128,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         ascii_table_rom.mem,  MEM_LPC_FILE= ascii_table.lpc
+    -Contains EBR ascii_table_0_1_2:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 128,  Depth_B= 128,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         ascii_table_rom.mem,  MEM_LPC_FILE= ascii_table.lpc
+    -Contains EBR ascii_table_0_0_3:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 128,  Depth_B= 128,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         ascii_table_rom.mem,  MEM_LPC_FILE= ascii_table.lpc
+    -Contains EBR ascii_table_0_2_1:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 128,  Depth_B= 128,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= ENABLED,  MEM_INIT_FILE=
+         ascii_table_rom.mem,  MEM_LPC_FILE= ascii_table.lpc
+/DD0/ROM1:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR screen_clean_0_0_0:  TYPE= DP8KC,  Width_A= 7,  Depth_A= 128,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= screen_clean_rom.mem,  MEM_LPC_FILE=
+         screen_clean.lpc
+/DD0/ROM2:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR screen_reverb_0_0_0:  TYPE= DP8KC,  Width_A= 7,  Depth_A= 128,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= screen_reverb_rom.mem,  MEM_LPC_FILE=
+         screen_reverb.lpc
+/DD0/ROM3:
+    EBRs: 1
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR screen_echo_0_0_0:  TYPE= DP8KC,  Width_A= 7,  Depth_A= 128,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= screen_echo_rom.mem,  MEM_LPC_FILE=
+         screen_echo.lpc
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSC0
+
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     M_CLK
+  OSC Nominal Frequency (MHz):                      38.00
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSC0
+         Type: OSCH
+Instance Name: DD0/ROM3/screen_echo_0_0_0
+         Type: DP8KC
+Instance Name: DD0/ROM2/screen_reverb_0_0_0
+         Type: DP8KC
+Instance Name: DD0/ROM1/screen_clean_0_0_0
+         Type: DP8KC
+Instance Name: DD0/ROM0/ascii_table_0_3_0
+         Type: DP8KC
+Instance Name: DD0/ROM0/ascii_table_0_1_2
+         Type: DP8KC
+Instance Name: DD0/ROM0/ascii_table_0_0_3
+         Type: DP8KC
+Instance Name: DD0/ROM0/ascii_table_0_2_1
+         Type: DP8KC
+Instance Name: DD0/I2CC0/BUF0/ram_data_0_0_0
+         Type: DP8KC
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'ADC_RST_N_c_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'ADC_RST_N_c_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 87 
+
+     Type and instance name of component: 
+   Register : DD0/WRITE_EN_BUF_82
+   Register : DD0/INIT_I2CC_87
+   Register : DD0/LOAD_CTR_D_DRV__i0
+
+   Register : DD0/LOAD_CTR_D_DRV__i1
+   Register : DD0/LOAD_CTR_D_DRV__i2
+   Register : DD0/LOAD_CTR_D_DRV__i3
+   Register : DD0/LOAD_CTR_D_DRV__i4
+   Register : DD0/LOAD_CTR_D_DRV__i5
+   Register : DD0/LOAD_CTR_D_DRV__i6
+   Register : DD0/LOAD_CTR_D_DRV__i7
+   Register : DD0/LOAD_CTR_D_DRV__i8
+   Register : DD0/LOAD_CTR_D_DRV__i9
+   Register : DD0/PS_DRV_FSM_i7
+   Register : DD0/I2CC0/NEXT_I2CM_87
+   Register : DD0/I2CC0/LOAD_CTR_BUF_81
+   Register : DD0/I2CC0/I2CM0/PS_I2CM_FSM_i1
+   Register : DD0/I2CC0/I2CM0/READY_DATA_107
+   Register : DD0/I2CC0/I2CM0/PS_I2CM_FSM_i13
+   Register : DD0/I2CC0/I2CM0/ADDR_BIT_R_96_i1
+   Register : DD0/I2CC0/I2CM0/CT0/CLOCK_R_507__i3
+   Register : DD0/I2CC0/I2CM0/CT0/CLOCK_R_507__i4
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i0
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i10
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i9
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i8
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i7
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i6
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i5
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i4
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i3
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i2
+   Register : DD0/I2CC0/CTR0/CLOCK_R_506__i1
+   Register : I2SM/DATA_OUT_SR_R__i11
+   Register : I2SM/DATA_OUT_SR_R__i10
+   Register : I2SM/DATA_OUT_SR_R__i9
+   Register : I2SM/DATA_OUT_SR_R__i8
+   Register : I2SM/DATA_OUT_SR_R__i7
+   Register : I2SM/DATA_OUT_SR_R__i6
+   Register : I2SM/DATA_OUT_SR_R__i5
+   Register : I2SM/DATA_OUT_SR_R__i4
+   Register : I2SM/DATA_OUT_SR_R__i3
+   Register : I2SM/DATA_OUT_SR_R__i2
+   Register : I2SM/DATA_OUT_SR_R__i1
+   Register : I2SM/DATA_OUT_SR_L_i0
+   Register : I2SM/DATA_OUT_SR_R__i0
+   Register : I2SM/DATA_OUT_L_BUF_i23
+   Register : I2SM/DATA_OUT_L_BUF_i22
+   Register : I2SM/DATA_OUT_L_BUF_i21
+   Register : I2SM/DATA_OUT_L_BUF_i20
+   Register : I2SM/DATA_OUT_L_BUF_i19
+   Register : I2SM/DATA_OUT_L_BUF_i18
+   Register : I2SM/DATA_OUT_L_BUF_i17
+   Register : I2SM/DATA_OUT_L_BUF_i16
+   Register : I2SM/DATA_OUT_L_BUF_i15
+   Register : I2SM/DATA_OUT_L_BUF_i14
+   Register : I2SM/DATA_OUT_L_BUF_i13
+   Register : I2SM/DATA_OUT_L_BUF_i12
+   Register : I2SM/DATA_OUT_L_BUF_i11
+   Register : I2SM/DATA_OUT_L_BUF_i10
+
+   Register : I2SM/DATA_OUT_L_BUF_i9
+   Register : I2SM/DATA_OUT_L_BUF_i8
+   Register : I2SM/DATA_OUT_L_BUF_i7
+   Register : I2SM/DATA_OUT_L_BUF_i6
+   Register : I2SM/DATA_OUT_L_BUF_i5
+   Register : I2SM/DATA_OUT_L_BUF_i4
+   Register : I2SM/DATA_OUT_L_BUF_i3
+   Register : I2SM/DATA_OUT_L_BUF_i2
+   Register : I2SM/DATA_OUT_SR_R__i13
+   Register : I2SM/DATA_OUT_SR_R__i14
+   Register : I2SM/DATA_OUT_SR_R__i15
+   Register : I2SM/DATA_OUT_SR_R__i16
+   Register : I2SM/DATA_OUT_SR_R__i17
+   Register : I2SM/DATA_OUT_SR_R__i18
+   Register : I2SM/DATA_OUT_SR_R__i19
+   Register : I2SM/DATA_OUT_SR_R__i20
+   Register : I2SM/DATA_OUT_SR_R__i21
+   Register : I2SM/DATA_OUT_SR_R__i22
+   Register : I2SM/DATA_OUT_SR_R__i23
+   Register : I2SM/DATA_OUT_L_BUF_i1
+   Register : I2SM/DATA_OUT_SR_R__i12
+   Register : DAC0/I2CM1/READY_DATA_107
+   Register : DAC0/I2CM1/PS_I2CM_FSM_i1
+   Register : DAC0/I2CM1/ADDR_BIT_R_96_i0
+   Register : DAC0/I2CM1/PS_I2CM_FSM_i13
+   Register : DAC0/I2CM1/ADDR_BIT_R_96_i1
+   Register : DAC0/I2CM1/CT0/CLOCK_R_505__i3
+   Register : DAC0/I2CM1/CT0/CLOCK_R_505__i4
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'ADC_RST_N_c_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   DP8KC = 8
+
+     Type and instance name of component: 
+   DP8KC : DD0/ROM3/screen_echo_0_0_0
+   DP8KC : DD0/ROM2/screen_reverb_0_0_0
+   DP8KC : DD0/ROM1/screen_clean_0_0_0
+   DP8KC : DD0/ROM0/ascii_table_0_3_0
+   DP8KC : DD0/ROM0/ascii_table_0_1_2
+   DP8KC : DD0/ROM0/ascii_table_0_0_3
+   DP8KC : DD0/ROM0/ascii_table_0_2_1
+   DP8KC : DD0/I2CC0/BUF0/ram_data_0_0_0
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 62 MB
+        
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

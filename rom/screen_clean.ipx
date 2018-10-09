@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="screen_clean" module="screen_clean" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 05 18 20:58:20.113" version="5.4" type="Module" synthesis="lse" source_format="VHDL">
+  <Package>
+		<File name="" type="" modified="2018 05 18 20:58:19.929"/>
+		<File name="c:/fpga/projects/fxbox/rom/mem/screen_clean_rom.mem" type="mem" modified="2018 05 12 13:31:09.544"/>
+		<File name="screen_clean.lpc" type="lpc" modified="2018 05 18 20:58:18.606"/>
+		<File name="screen_clean.vhd" type="top_level_vhdl" modified="2018 05 18 20:58:18.713"/>
+		<File name="screen_clean_tmpl.vhd" type="template_vhdl" modified="2018 05 18 20:58:18.722"/>
+		<File name="tb_screen_clean_tmpl.vhd" type="testbench_vhdl" modified="2018 05 18 20:58:18.753"/>
+  </Package>
+</DiamondModule>

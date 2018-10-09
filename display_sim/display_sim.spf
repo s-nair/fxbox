@@ -1,0 +1,25 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="display_sim" simType="Active-HDL">
+    <Source worklib="work" path="src/pkg/fxbox_pkg.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="pdpram/._Real_._Math_.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/clock_tree.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/input_handler.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_echo.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_reverb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_clean.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/ascii_table.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="pdpram/ram_data.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/i2c_master.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/i2c_controller.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/display_driver.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/box_top.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="src/tb/box_top_tb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/ascii_table.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_clean.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_reverb.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="rom/screen_echo.vhd" type="VHDL" include="none"/>
+    <Source worklib="work" path="pdpram/ram_data.vhd" type="VHDL" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VHDL" name="testbench"/>
+</BaliSimProject>

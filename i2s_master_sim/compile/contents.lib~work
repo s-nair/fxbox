@@ -1,0 +1,5 @@
+3
+~E 1 "./../../i2s_master.vhd" 26 i2s_master
+~A 1 "./../../i2s_master.vhd" 39 rtl
+~E 1 "./../../i2s_master_tb.vhd" 8 testbench
+~A 1 "./../../i2s_master_tb.vhd" 11 tb

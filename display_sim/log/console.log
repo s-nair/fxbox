@@ -1,0 +1,440 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+removefile -Y -D *
+addfile C:/fpga/projects/FxBox/src/pkg/fxbox_pkg.vhd
+# Adding file C:\fpga\projects\FxBox\src\pkg\fxbox_pkg.vhd ... Done
+addfile C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd
+# Adding file C:\fpga\projects\FxBox\pdpram\._Real_._Math_.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/clock_tree.vhd
+# Adding file C:\fpga\projects\FxBox\src\clock_tree.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/input_handler.vhd
+# Adding file C:\fpga\projects\FxBox\src\input_handler.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_echo.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_echo.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_reverb.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_clean.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_clean.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/ascii_table.vhd
+# Adding file C:\fpga\projects\FxBox\rom\ascii_table.vhd ... Done
+addfile C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+# Adding file C:\fpga\projects\FxBox\pdpram\ram_data.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/i2c_master.vhd
+# Adding file C:\fpga\projects\FxBox\src\i2c_master.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/i2c_controller.vhd
+# Adding file C:\fpga\projects\FxBox\src\i2c_controller.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/display_driver.vhd
+# Adding file C:\fpga\projects\FxBox\src\display_driver.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/box_top.vhd
+# Adding file C:\fpga\projects\FxBox\src\box_top.vhd ... Done
+addfile C:/fpga/projects/FxBox/src/tb/box_top_tb.vhd
+# Adding file C:\fpga\projects\FxBox\src\tb\box_top_tb.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/ascii_table.vhd
+# Adding file C:\fpga\projects\FxBox\rom\ascii_table.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_clean.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_clean.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_reverb.vhd ... Done
+addfile C:/fpga/projects/FxBox/rom/screen_echo.vhd
+# Adding file C:\fpga\projects\FxBox\rom\screen_echo.vhd ... Done
+addfile C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+# Adding file C:\fpga\projects\FxBox\pdpram\ram_data.vhd ... Done
+vlib C:/fpga/projects/FxBox/display_sim/work
+# Warning: Library work already exists
+adel -all
+# Library contents cleared.
+vcom -dbg -work work C:/fpga/projects/FxBox/src/pkg/fxbox_pkg.vhd
+# File: C:\fpga\projects\FxBox\src\pkg\fxbox_pkg.vhd
+# Compile Package "fxbox_pkg"
+# Compile Package Body "fxbox_pkg"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+vcom -dbg -work work C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd
+# File: C:\fpga\projects\FxBox\pdpram\._Real_._Math_.vhd
+# Compile Package "MATH_REAL"
+# Compile Package Body "MATH_REAL"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/clock_tree.vhd
+# File: C:\fpga\projects\FxBox\src\clock_tree.vhd
+# Compile Entity "clock_tree"
+# Compile Architecture "rtl" of Entity "clock_tree"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/input_handler.vhd
+# File: C:\fpga\projects\FxBox\src\input_handler.vhd
+# Compile Entity "input_handler"
+# Compile Architecture "rtl" of Entity "input_handler"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_echo.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_echo.vhd
+# Compile Entity "screen_echo"
+# Compile Architecture "Structure" of Entity "screen_echo"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_reverb.vhd
+# Compile Entity "screen_reverb"
+# Compile Architecture "Structure" of Entity "screen_reverb"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_clean.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_clean.vhd
+# Compile Entity "screen_clean"
+# Compile Architecture "Structure" of Entity "screen_clean"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/ascii_table.vhd
+# File: C:\fpga\projects\FxBox\rom\ascii_table.vhd
+# Compile Entity "ascii_table"
+# Compile Architecture "Structure" of Entity "ascii_table"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+# File: C:\fpga\projects\FxBox\pdpram\ram_data.vhd
+# Compile Entity "ram_data"
+# Compile Architecture "Structure" of Entity "ram_data"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/i2c_master.vhd
+# File: C:\fpga\projects\FxBox\src\i2c_master.vhd
+# Compile Entity "i2c_master"
+# Compile Architecture "rtl" of Entity "i2c_master"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/i2c_controller.vhd
+# File: C:\fpga\projects\FxBox\src\i2c_controller.vhd
+# Compile Entity "i2c_controller"
+# Compile Architecture "rtl" of Entity "i2c_controller"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/display_driver.vhd
+# File: C:\fpga\projects\FxBox\src\display_driver.vhd
+# Compile Entity "display_driver"
+# Compile Architecture "rtl" of Entity "display_driver"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/box_top.vhd
+# File: C:\fpga\projects\FxBox\src\box_top.vhd
+# Compile Entity "box_top"
+# Compile Architecture "rtl" of Entity "box_top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+vcom -dbg -work work C:/fpga/projects/FxBox/src/tb/box_top_tb.vhd
+# File: C:\fpga\projects\FxBox\src\tb\box_top_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "tb" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/ascii_table.vhd
+# File: C:\fpga\projects\FxBox\rom\ascii_table.vhd
+# Compile Entity "ascii_table"
+# Compile Architecture "Structure" of Entity "ascii_table"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_clean.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_clean.vhd
+# Compile Entity "screen_clean"
+# Compile Architecture "Structure" of Entity "screen_clean"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_reverb.vhd
+# Compile Entity "screen_reverb"
+# Compile Architecture "Structure" of Entity "screen_reverb"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/rom/screen_echo.vhd
+# File: C:\fpga\projects\FxBox\rom\screen_echo.vhd
+# Compile Entity "screen_echo"
+# Compile Architecture "Structure" of Entity "screen_echo"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+vcom -dbg -work work C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+# File: C:\fpga\projects\FxBox\pdpram\ram_data.vhd
+# Compile Entity "ram_data"
+# Compile Architecture "Structure" of Entity "ram_data"
+# Compile Configuration "Structure_CON"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+entity testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r testbench -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8019 kB (elbread=1280 elab2=6529 kernel=209 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  10:14 PM, Friday, May 18, 2018
+#  Simulation has been initialized
+add wave *
+# 5 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/SDA' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/SCL' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/LEFT_IN' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/RIGHT_IN' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/testbench/RESET' has already been traced.
+# 0 signal(s) traced.
+# 16 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8019 kB (elbread=1280 elab2=6529 kernel=209 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  10:14 PM, Friday, May 18, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+# KERNEL: stopped at time: 300 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8019 kB (elbread=1280 elab2=6529 kernel=209 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:22 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+acom -O3 -e 100 -work work -2002  $dsn/../src/input_handler.vhd $dsn/../src/box_top.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\fpga\projects\FxBox\display_sim\..\src\input_handler.vhd
+# Compile Entity "input_handler"
+# Compile Architecture "rtl" of Entity "input_handler"
+# File: C:\fpga\projects\FxBox\display_sim\..\src\box_top.vhd
+# Compile Entity "box_top"
+# Compile Architecture "rtl" of Entity "box_top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8014 kB (elbread=1280 elab2=6526 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:22 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+# KERNEL: stopped at time: 300 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8014 kB (elbread=1280 elab2=6526 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:37 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+acom -O3 -e 100 -work work -2002  $dsn/../src/input_handler.vhd $dsn/../src/box_top.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\fpga\projects\FxBox\display_sim\..\src\input_handler.vhd
+# Compile Entity "input_handler"
+# Compile Architecture "rtl" of Entity "input_handler"
+# File: C:\fpga\projects\FxBox\display_sim\..\src\box_top.vhd
+# Compile Entity "box_top"
+# Compile Architecture "rtl" of Entity "box_top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8014 kB (elbread=1280 elab2=6526 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:37 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+# KERNEL: stopped at time: 300 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8014 kB (elbread=1280 elab2=6526 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:39 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+acom -O3 -e 100 -work work -2002  $dsn/../src/tb/box_top_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\fpga\projects\FxBox\display_sim\..\src\tb\box_top_tb.vhd
+# Compile Entity "testbench"
+# Compile Architecture "tb" of Entity "testbench"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8013 kB (elbread=1280 elab2=6525 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:39 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+# KERNEL: stopped at time: 300 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8013 kB (elbread=1280 elab2=6525 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:45 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+acom -O3 -e 100 -work work -2002  $dsn/../src/input_handler.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\fpga\projects\FxBox\display_sim\..\src\input_handler.vhd
+# Compile Entity "input_handler"
+# Compile Architecture "rtl" of Entity "input_handler"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8013 kB (elbread=1280 elab2=6525 kernel=207 sdf=0)
+# KERNEL: ASDB file was created in location C:\fpga\projects\FxBox\display_sim\src\wave.asdb
+#  11:45 PM, Monday, May 21, 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/fpga/projects/FxBox/display_sim/src/wave.asdb'.
+run 300 ms
+# KERNEL: stopped at time: 300 ms

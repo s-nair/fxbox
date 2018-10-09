@@ -1,0 +1,71 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=work
+[Library]
+display_sim=.\display_sim\display_sim.lib
+[Settings]
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo2
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+display_sim=.
+work=.
+[LocalVerilogDirs]
+Count=0
+[DefineMacro]
+Global=
+[Files]
+/..\..\src\pkg\fxbox_pkg.vhd=-1
+/..\..\pdpram\._Real_._Math_.vhd=-1
+/..\..\src\clock_tree.vhd=-1
+/..\..\src\input_handler.vhd=-1
+/..\..\rom\screen_echo.vhd=-1
+/..\..\rom\screen_reverb.vhd=-1
+/..\..\rom\screen_clean.vhd=-1
+/..\..\rom\ascii_table.vhd=-1
+/..\..\pdpram\ram_data.vhd=-1
+/..\..\src\i2c_master.vhd=-1
+/..\..\src\i2c_controller.vhd=-1
+/..\..\src\display_driver.vhd=-1
+/..\..\src\box_top.vhd=-1
+/..\..\src\tb\box_top_tb.vhd=-1
+[Files.Data]
+.\..\src\pkg\fxbox_pkg.vhd=VHDL Source Code
+.\..\pdpram\._Real_._Math_.vhd=VHDL Source Code
+.\..\src\clock_tree.vhd=VHDL Source Code
+.\..\src\input_handler.vhd=VHDL Source Code
+.\..\rom\screen_echo.vhd=VHDL Source Code
+.\..\rom\screen_reverb.vhd=VHDL Source Code
+.\..\rom\screen_clean.vhd=VHDL Source Code
+.\..\rom\ascii_table.vhd=VHDL Source Code
+.\..\pdpram\ram_data.vhd=VHDL Source Code
+.\..\src\i2c_master.vhd=VHDL Source Code
+.\..\src\i2c_controller.vhd=VHDL Source Code
+.\..\src\display_driver.vhd=VHDL Source Code
+.\..\src\box_top.vhd=VHDL Source Code
+.\..\src\tb\box_top_tb.vhd=VHDL Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=testbench|tb|0 
+ShowHide=ShowTopLevel
+Selected=

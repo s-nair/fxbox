@@ -1,0 +1,1000 @@
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 8 6.2
+#Hostname: SHARATHNAIR2-W
+
+# Sat May 12 18:41:08 2018
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.10_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\fpga\projects\Rough\disp_drv_test.vhd":11:7:11:19|Top entity is set to disp_drv_test.
+File C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.vhd changed - recompiling
+File C:\fpga\projects\Rough\i2c_master.vhd changed - recompiling
+File C:\lscc\diamond\3.10_x64\synpbase\lib\vhd\misc.vhd changed - recompiling
+File C:\fpga\projects\Rough\pdpram\ram_data.vhd changed - recompiling
+File C:\fpga\projects\Rough\i2c_controller_ram.vhd changed - recompiling
+File C:\fpga\projects\Rough\rom\ascii_table.vhd changed - recompiling
+File C:\fpga\projects\Rough\rom\screen_clean.vhd changed - recompiling
+File C:\fpga\projects\Rough\rom\screen_reverb.vhd changed - recompiling
+File C:\fpga\projects\Rough\rom\screen_echo.vhd changed - recompiling
+File C:\fpga\projects\Rough\display_driver.vhd changed - recompiling
+File C:\fpga\projects\Rough\disp_drv_test.vhd changed - recompiling
+VHDL syntax check successful!
+File C:\fpga\projects\Rough\disp_drv_test.vhd changed - recompiling
+@N: CD630 :"C:\fpga\projects\Rough\disp_drv_test.vhd":11:7:11:19|Synthesizing work.disp_drv_test.rtl.
+@N: CD630 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+@N: CD630 :"C:\fpga\projects\Rough\display_driver.vhd":9:7:9:20|Synthesizing work.display_driver.rtl.
+@N: CD231 :"C:\fpga\projects\Rough\display_driver.vhd":113:18:113:19|Using onehot encoding for type state_drv_t. For example, enumeration pon_wait is mapped to "100000000".
+@N: CD604 :"C:\fpga\projects\Rough\display_driver.vhd":465:3:465:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\fpga\projects\Rough\clock_tree.vhd":86:7:86:16|Synthesizing work.clock_tree.rtl.
+Post processing for work.clock_tree.rtl
+@N: CD630 :"C:\fpga\projects\Rough\rom\screen_echo.vhd":14:7:14:17|Synthesizing work.screen_echo.structure.
+@N: CD630 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":1699:10:1699:14|Synthesizing work.dp8kc.syn_black_box.
+Post processing for work.dp8kc.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box.
+Post processing for work.vlo.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":1483:10:1483:12|Synthesizing work.vhi.syn_black_box.
+Post processing for work.vhi.syn_black_box
+Post processing for work.screen_echo.structure
+@N: CD630 :"C:\fpga\projects\Rough\rom\screen_reverb.vhd":14:7:14:19|Synthesizing work.screen_reverb.structure.
+Post processing for work.screen_reverb.structure
+@N: CD630 :"C:\fpga\projects\Rough\rom\screen_clean.vhd":14:7:14:18|Synthesizing work.screen_clean.structure.
+Post processing for work.screen_clean.structure
+@N: CD630 :"C:\fpga\projects\Rough\rom\ascii_table.vhd":14:7:14:17|Synthesizing work.ascii_table.structure.
+Post processing for work.ascii_table.structure
+@N: CD630 :"C:\fpga\projects\Rough\i2c_controller_ram.vhd":9:7:9:24|Synthesizing work.i2c_controller_ram.rtl.
+@N: CD233 :"C:\fpga\projects\Rough\i2c_controller_ram.vhd":86:20:86:21|Using sequential encoding for type state_frame_t.
+@N: CD604 :"C:\fpga\projects\Rough\i2c_controller_ram.vhd":337:3:337:16|OTHERS clause is not synthesized.
+@W: CD638 :"C:\fpga\projects\Rough\i2c_controller_ram.vhd":76:21:76:33|Signal data_w_i2cm_r is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"C:\fpga\projects\Rough\clock_tree.vhd":86:7:86:16|Synthesizing work.clock_tree.rtl.
+Post processing for work.clock_tree.rtl
+@N: CD630 :"C:\fpga\projects\Rough\pdpram\ram_data.vhd":14:7:14:14|Synthesizing work.ram_data.structure.
+Post processing for work.ram_data.structure
+@N: CD630 :"C:\fpga\projects\Rough\i2c_master.vhd":47:7:47:16|Synthesizing work.i2c_master.rtl.
+@N: CD231 :"C:\fpga\projects\Rough\i2c_master.vhd":79:19:79:20|Using onehot encoding for type state_i2cm_t. For example, enumeration ready is mapped to "10000000000000".
+@N: CD630 :"C:\fpga\projects\Rough\clock_tree.vhd":86:7:86:16|Synthesizing work.clock_tree.rtl.
+Post processing for work.clock_tree.rtl
+Post processing for work.i2c_master.rtl
+@N: CL189 :"C:\fpga\projects\Rough\i2c_master.vhd":254:2:254:3|Register bit D_IN(4) is always 1.
+@N: CL189 :"C:\fpga\projects\Rough\i2c_master.vhd":254:2:254:3|Register bit D_IN(3) is always 1.
+@W: CL279 :"C:\fpga\projects\Rough\i2c_master.vhd":254:2:254:3|Pruning register bits 4 to 1 of D_IN(4 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+Post processing for work.i2c_controller_ram.rtl
+@W: CL177 :"C:\fpga\projects\Rough\i2c_controller_ram.vhd":216:2:216:3|Sharing sequential element RUN_I2CM. Add a syn_preserve attribute to the element to prevent sharing.
+Post processing for work.display_driver.rtl
+@N: CD630 :"C:\fpga\projects\Rough\clock_tree.vhd":86:7:86:16|Synthesizing work.clock_tree.rtl.
+Post processing for work.clock_tree.rtl
+Post processing for work.disp_drv_test.rtl
+@N: CL201 :"C:\fpga\projects\Rough\i2c_master.vhd":387:2:387:3|Trying to extract state machine for register PS_I2CM.
+Extracted state machine for register PS_I2CM
+State machine has 13 reachable states with original encodings of:
+   00000000000001
+   00000000000010
+   00000000000100
+   00000000001000
+   00000000010000
+   00000000100000
+   00000001000000
+   00000010000000
+   00000100000000
+   00001000000000
+   00010000000000
+   00100000000000
+   01000000000000
+@N: CL201 :"C:\fpga\projects\Rough\display_driver.vhd":408:2:408:3|Trying to extract state machine for register PS_DRV.
+Extracted state machine for register PS_DRV
+State machine has 9 reachable states with original encodings of:
+   000000001
+   000000010
+   000000100
+   000001000
+   000010000
+   000100000
+   001000000
+   010000000
+   100000000
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 12 18:41:09 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\fpga\projects\Rough\impl1\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 12 18:41:09 2018
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 12 18:41:09 2018
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\fpga\projects\Rough\impl1\synwork\Rough_impl1_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat May 12 18:41:10 2018
+
+###########################################################]
+Pre-mapping Report
+
+# Sat May 12 18:41:11 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\fpga\projects\Rough\impl1\Rough_impl1_scck.rpt 
+Printing clock  summary report in "C:\fpga\projects\Rough\impl1\Rough_impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: MO129 :"c:\fpga\projects\rough\display_driver.vhd":288:2:288:3|Sequential instance DD0.MODE_FX_R[0] is reduced to a combinational gate by constant propagation.
+@N: BN115 :"c:\fpga\projects\rough\display_driver.vhd":150:1:150:4|Removing instance ROM2 (in view: work.display_driver(rtl)) of type view:work.screen_reverb(structure) because it does not drive other instances.
+@N: BN115 :"c:\fpga\projects\rough\display_driver.vhd":155:1:155:4|Removing instance ROM3 (in view: work.display_driver(rtl)) of type view:work.screen_echo(structure) because it does not drive other instances.
+@W: BN114 :"c:\fpga\projects\rough\rom\screen_reverb.vhd":112:4:112:22|Removing instance screen_reverb_0_0_0 (in view: work.screen_reverb(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.
+@W: BN114 :"c:\fpga\projects\rough\rom\screen_echo.vhd":112:4:112:20|Removing instance screen_echo_0_0_0 (in view: work.screen_echo(structure)) of black box view:LUCENT.DP8KC(PRIM) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\display_driver.vhd":365:2:365:3|Removing sequential instance BUSY (in view: work.display_driver(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist disp_drv_test
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                         Requested     Requested     Clock                                                     Clock                   Clock
+Level     Clock                                         Frequency     Period        Type                                                      Group                   Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       disp_drv_test|M_CLK_inferred_clock            38.0 MHz      26.316        inferred                                                  Inferred_clkgroup_0     15   
+1 .         clock_tree_15|CLOCK_R_derived_clock[5]      38.0 MHz      26.316        derived (from disp_drv_test|M_CLK_inferred_clock)         Inferred_clkgroup_0     81   
+2 ..          i2c_master|READY_DATA_derived_clock       38.0 MHz      26.316        derived (from clock_tree_15|CLOCK_R_derived_clock[5])     Inferred_clkgroup_0     23   
+2 ..          i2c_master|PS_I2CM_derived_clock[11]      38.0 MHz      26.316        derived (from clock_tree_15|CLOCK_R_derived_clock[5])     Inferred_clkgroup_0     12   
+2 ..          i2c_master|LOAD_DATA_derived_clock[1]     38.0 MHz      26.316        derived (from clock_tree_15|CLOCK_R_derived_clock[5])     Inferred_clkgroup_0     8    
+1 .         clock_tree_15|CLOCK_R_derived_clock[14]     38.0 MHz      26.316        derived (from disp_drv_test|M_CLK_inferred_clock)         Inferred_clkgroup_0     20   
+                                                                                                                                                                           
+0 -       i2c_master|BIT_PULSE_inferred_clock           38.0 MHz      26.316        inferred                                                  Inferred_clkgroup_1     1    
+===========================================================================================================================================================================
+
+@W: MT529 :"c:\fpga\projects\rough\clock_tree.vhd":103:2:103:3|Found inferred clock disp_drv_test|M_CLK_inferred_clock which controls 15 sequential elements including CTR0.CLOCK_R[14:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\fpga\projects\rough\i2c_master.vhd":347:2:347:3|Found inferred clock i2c_master|BIT_PULSE_inferred_clock which controls 1 sequential elements including DD0.I2CC0.I2CM0.SDA_R. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine PS_I2CM[0:12] (in view: work.i2c_master(rtl))
+original code -> new code
+   00000000000001 -> 0000
+   00000000000010 -> 0001
+   00000000000100 -> 0010
+   00000000001000 -> 0011
+   00000000010000 -> 0100
+   00000000100000 -> 0101
+   00000001000000 -> 0110
+   00000010000000 -> 0111
+   00000100000000 -> 1000
+   00001000000000 -> 1001
+   00010000000000 -> 1010
+   00100000000000 -> 1011
+   01000000000000 -> 1100
+Encoding state machine PS_DRV[0:8] (in view: work.display_driver(rtl))
+original code -> new code
+   000000001 -> 0000
+   000000010 -> 0001
+   000000100 -> 0010
+   000001000 -> 0011
+   000010000 -> 0100
+   000100000 -> 0101
+   001000000 -> 0110
+   010000000 -> 0111
+   100000000 -> 1000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 142MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat May 12 18:41:11 2018
+
+###########################################################]
+Map & Optimize Report
+
+# Sat May 12 18:41:12 2018
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+Encoding state machine PS_DRV[0:8] (in view: work.display_driver(rtl))
+original code -> new code
+   000000001 -> 0000
+   000000010 -> 0001
+   000000100 -> 0010
+   000001000 -> 0011
+   000010000 -> 0100
+   000100000 -> 0101
+   001000000 -> 0110
+   010000000 -> 0111
+   100000000 -> 1000
+@N: MO231 :"c:\fpga\projects\rough\clock_tree.vhd":103:2:103:3|Found counter in view:work.display_driver(rtl) instance CTR0.CLOCK_R[9:0] 
+@N: MO231 :"c:\fpga\projects\rough\clock_tree.vhd":103:2:103:3|Found counter in view:work.i2c_controller_ram(rtl) instance CTR0.CLOCK_R[10:0] 
+Encoding state machine PS_I2CM[0:12] (in view: work.i2c_master(rtl))
+original code -> new code
+   00000000000001 -> 0000
+   00000000000010 -> 0001
+   00000000000100 -> 0010
+   00000000001000 -> 0011
+   00000000010000 -> 0100
+   00000000100000 -> 0101
+   00000001000000 -> 0110
+   00000010000000 -> 0111
+   00000100000000 -> 1000
+   00001000000000 -> 1001
+   00010000000000 -> 1010
+   00100000000000 -> 1011
+   01000000000000 -> 1100
+@N: MO231 :"c:\fpga\projects\rough\clock_tree.vhd":103:2:103:3|Found counter in view:work.i2c_master(rtl) instance CT0.CLOCK_R[4:0] 
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":164:2:164:3|Sequential instance DD0.I2CC0.I2CM0.ADDR_BYTE_R[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\fpga\projects\rough\i2c_master.vhd":181:2:181:3|Sequential instance DD0.I2CC0.I2CM0.CMD_BYTE_R[0] is reduced to a combinational gate by constant propagation.
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+@N: BN362 :"c:\fpga\projects\rough\display_driver.vhd":252:2:252:3|Removing sequential instance DD0.CLK_GTA (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\display_driver.vhd":271:2:271:3|Removing sequential instance DD0.DELAY_SR[1] (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\i2c_master.vhd":387:2:387:3|Removing sequential instance DD0.I2CC0.I2CM0.PS_I2CM[3] (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\i2c_master.vhd":387:2:387:3|Removing sequential instance DD0.I2CC0.I2CM0.PS_I2CM[2] (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\i2c_master.vhd":387:2:387:3|Removing sequential instance DD0.I2CC0.I2CM0.PS_I2CM[1] (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+@N: BN362 :"c:\fpga\projects\rough\i2c_master.vhd":387:2:387:3|Removing sequential instance DD0.I2CC0.I2CM0.PS_I2CM[0] (in view: work.disp_drv_test(rtl)) because it does not drive other instances.
+Clock on counter inst DD0.CTR0.CLOCK_R[9:0] converted
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    21.68ns		 128 /       110
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 145MB)
+
+@N: MT611 :|Automatically generated clock i2c_master|LOAD_DATA_derived_clock[1] is not used and is being removed
+@N: MT611 :|Automatically generated clock i2c_master|PS_I2CM_derived_clock[11] is not used and is being removed
+@N: MT611 :|Automatically generated clock i2c_master|READY_DATA_derived_clock is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+4 gated/generated clock tree(s) driving 140 clock pin(s) of sequential element(s)
+0 instances converted, 140 sequential instances remain driven by gated/generated clocks
+
+============================================================================================================ Gated/Generated Clocks =============================================================================================================
+Clock Tree ID     Driving Element                    Drive Element Type     Fanout     Sample Instance             Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       OSC0                               OSCH                   15         CTR0.CLOCK_R[14]            Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       CTR0.CLOCK_R[5]                    FD1S3AX                104        DD0.CLK_GTA_0               Need declared clock or clock from port to derive clock from ff                                                                
+@K:CKID0003       CTR0.CLOCK_R[14]                   FD1S3AX                20         DD0.PON_DELAY_SR[0]         Need declared clock or clock from port to derive clock from ff                                                                
+@K:CKID0004       DD0.I2CC0.I2CM0.BIT_PULSE_0_a2     ORCALUT4               1          DD0_I2CC0_I2CM0_SDA_Rio     No clocks found on inputs                                                                                                     
+=================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 110MB peak: 145MB)
+
+Writing Analyst data base C:\fpga\projects\Rough\impl1\synwork\Rough_impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\fpga\projects\Rough\impl1\Rough_impl1.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 149MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+
+@W: MT420 |Found inferred clock disp_drv_test|M_CLK_inferred_clock with period 26.32ns. Please declare a user-defined clock on object "n:M_CLK"
+@W: MT420 |Found inferred clock i2c_master|BIT_PULSE_inferred_clock with period 26.32ns. Please declare a user-defined clock on object "n:DD0.I2CC0.I2CM0.BIT_PULSE"
+@N: MT615 |Found clock clock_tree_15|CLOCK_R_derived_clock[14] with period 26.32ns 
+@N: MT615 |Found clock clock_tree_15|CLOCK_R_derived_clock[5] with period 26.32ns 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat May 12 18:41:14 2018
+#
+
+
+Top view:               disp_drv_test
+Requested Frequency:    38.0 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 21.112
+
+                                            Requested     Estimated     Requested     Estimated                Clock                                                 Clock              
+Starting Clock                              Frequency     Frequency     Period        Period        Slack      Type                                                  Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock_tree_15|CLOCK_R_derived_clock[5]      38.0 MHz      244.2 MHz     26.316        4.095         22.932     derived (from disp_drv_test|M_CLK_inferred_clock)     Inferred_clkgroup_0
+clock_tree_15|CLOCK_R_derived_clock[14]     38.0 MHz      295.6 MHz     26.316        3.383         23.585     derived (from disp_drv_test|M_CLK_inferred_clock)     Inferred_clkgroup_0
+disp_drv_test|M_CLK_inferred_clock          38.0 MHz      192.2 MHz     26.316        5.204         21.112     inferred                                              Inferred_clkgroup_0
+i2c_master|BIT_PULSE_inferred_clock         38.0 MHz      NA            26.316        NA            NA         inferred                                              Inferred_clkgroup_1
+========================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                 Ending                                   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+disp_drv_test|M_CLK_inferred_clock       disp_drv_test|M_CLK_inferred_clock       |  26.316      21.112  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_tree_15|CLOCK_R_derived_clock[5]   clock_tree_15|CLOCK_R_derived_clock[5]   |  26.316      44.441  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_tree_15|CLOCK_R_derived_clock[5]   clock_tree_15|CLOCK_R_derived_clock[14]  |  26.316      22.932  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_tree_15|CLOCK_R_derived_clock[5]   i2c_master|BIT_PULSE_inferred_clock      |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+clock_tree_15|CLOCK_R_derived_clock[14]  clock_tree_15|CLOCK_R_derived_clock[5]   |  26.316      23.585  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_tree_15|CLOCK_R_derived_clock[14]  clock_tree_15|CLOCK_R_derived_clock[14]  |  26.316      51.554  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: clock_tree_15|CLOCK_R_derived_clock[5]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                                                          Arrival           
+Instance                           Reference                                  Type        Pin      Net               Time        Slack 
+                                   Clock                                                                                               
+---------------------------------------------------------------------------------------------------------------------------------------
+DD0.PS_DRV[2]                      clock_tree_15|CLOCK_R_derived_clock[5]     FD1P3AX     Q        PS_DRV[2]         1.260       22.932
+DD0.PS_DRV[0]                      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3AX     Q        PS_DRV[0]         1.256       22.936
+DD0.PS_DRV[1]                      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3AX     Q        PS_DRV[1]         1.244       22.948
+DD0.PS_DRV[3]                      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3AX     Q        PS_DRV[3]         1.204       22.988
+DD0.I2CC0.I2CM0.CT0.CLOCK_R[1]     clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3AX     Q        CLOCK_CT[1]       1.204       44.441
+DD0.I2CC0.I2CM0.CT0.CLOCK_R[0]     clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3AX     Q        CLOCK_CT[0]       1.188       44.457
+DD0.ROM0.ascii_table_0_0_3         clock_tree_15|CLOCK_R_derived_clock[5]     DP8KC       DOA0     DATA_ASCII[0]     3.737       45.427
+DD0.ROM0.ascii_table_0_0_3         clock_tree_15|CLOCK_R_derived_clock[5]     DP8KC       DOA1     DATA_ASCII[1]     3.737       45.427
+DD0.ROM0.ascii_table_0_0_3         clock_tree_15|CLOCK_R_derived_clock[5]     DP8KC       DOA2     DATA_ASCII[2]     3.737       45.427
+DD0.ROM0.ascii_table_0_0_3         clock_tree_15|CLOCK_R_derived_clock[5]     DP8KC       DOA3     DATA_ASCII[3]     3.737       45.427
+=======================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                         Starting                                                                         Required           
+Instance                 Reference                                  Type        Pin     Net               Time         Slack 
+                         Clock                                                                                               
+-----------------------------------------------------------------------------------------------------------------------------
+DD0.PON_DELAY_SR[1]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[2]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[3]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[4]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[5]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[6]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[7]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[8]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[9]      clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+DD0.PON_DELAY_SR[10]     clock_tree_15|CLOCK_R_derived_clock[5]     FD1S3IX     CD      PS_DRV_d_i[8]     25.513       22.932
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      26.316
+    - Setup time:                            0.803
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         25.513
+
+    - Propagation time:                      2.581
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 22.932
+
+    Number of logic level(s):                1
+    Starting point:                          DD0.PS_DRV[2] / Q
+    Ending point:                            DD0.PON_DELAY_SR[1] / CD
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[5] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+DD0.PS_DRV[2]              FD1P3AX      Q        Out     1.260     1.260       -         
+PS_DRV[2]                  Net          -        -       -         -           15        
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     B        In      0.000     1.260       -         
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     Z        Out     1.321     2.581       -         
+PS_DRV_d_i[8]              Net          -        -       -         -           19        
+DD0.PON_DELAY_SR[1]        FD1S3IX      CD       In      0.000     2.581       -         
+=========================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      26.316
+    - Setup time:                            0.803
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         25.513
+
+    - Propagation time:                      2.581
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 22.932
+
+    Number of logic level(s):                1
+    Starting point:                          DD0.PS_DRV[2] / Q
+    Ending point:                            DD0.PON_DELAY_SR_0[19] / CD
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[5] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+DD0.PS_DRV[2]              FD1P3AX      Q        Out     1.260     1.260       -         
+PS_DRV[2]                  Net          -        -       -         -           15        
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     B        In      0.000     1.260       -         
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     Z        Out     1.321     2.581       -         
+PS_DRV_d_i[8]              Net          -        -       -         -           19        
+DD0.PON_DELAY_SR_0[19]     FD1S3IX      CD       In      0.000     2.581       -         
+=========================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      26.316
+    - Setup time:                            0.803
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         25.513
+
+    - Propagation time:                      2.581
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 22.932
+
+    Number of logic level(s):                1
+    Starting point:                          DD0.PS_DRV[2] / Q
+    Ending point:                            DD0.PON_DELAY_SR[18] / CD
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[5] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+
+Instance / Net                          Pin      Pin               Arrival     No. of    
+Name                       Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+DD0.PS_DRV[2]              FD1P3AX      Q        Out     1.260     1.260       -         
+PS_DRV[2]                  Net          -        -       -         -           15        
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     B        In      0.000     1.260       -         
+DD0.PS_DRV_RNIMHRK1[3]     ORCALUT4     Z        Out     1.321     2.581       -         
+PS_DRV_d_i[8]              Net          -        -       -         -           19        
+DD0.PON_DELAY_SR[18]       FD1S3IX      CD       In      0.000     2.581       -         
+=========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: clock_tree_15|CLOCK_R_derived_clock[14]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                                              Arrival           
+Instance                   Reference                                   Type        Pin     Net                   Time        Slack 
+                           Clock                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------
+DD0.PON_DELAY_SR_0[19]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR[19]      0.972       23.585
+DD0.PON_DELAY_SR[0]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3AX     Q       PON_DELAY_SR[0]       0.972       51.554
+DD0.PON_DELAY_SR[1]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[1]     0.972       51.554
+DD0.PON_DELAY_SR[2]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[2]     0.972       51.554
+DD0.PON_DELAY_SR[3]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[3]     0.972       51.554
+DD0.PON_DELAY_SR[4]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[4]     0.972       51.554
+DD0.PON_DELAY_SR[5]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[5]     0.972       51.554
+DD0.PON_DELAY_SR[6]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[6]     0.972       51.554
+DD0.PON_DELAY_SR[7]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[7]     0.972       51.554
+DD0.PON_DELAY_SR[8]        clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     Q       PON_DELAY_SR_Q[8]     0.972       51.554
+===================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                                              Required           
+Instance                Reference                                   Type        Pin     Net                   Time         Slack 
+                        Clock                                                                                                    
+---------------------------------------------------------------------------------------------------------------------------------
+DD0.PS_DRV[0]           clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3AX     D       PS_DRV_ns[0]          26.404       23.585
+DD0.PON_DELAY_SR[1]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR[0]       52.526       51.554
+DD0.PON_DELAY_SR[2]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[1]     52.526       51.554
+DD0.PON_DELAY_SR[3]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[2]     52.526       51.554
+DD0.PON_DELAY_SR[4]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[3]     52.526       51.554
+DD0.PON_DELAY_SR[5]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[4]     52.526       51.554
+DD0.PON_DELAY_SR[6]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[5]     52.526       51.554
+DD0.PON_DELAY_SR[7]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[6]     52.526       51.554
+DD0.PON_DELAY_SR[8]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[7]     52.526       51.554
+DD0.PON_DELAY_SR[9]     clock_tree_15|CLOCK_R_derived_clock[14]     FD1S3IX     D       PON_DELAY_SR_Q[8]     52.526       51.554
+=================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      26.316
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         26.404
+
+    - Propagation time:                      2.820
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 23.585
+
+    Number of logic level(s):                3
+    Starting point:                          DD0.PON_DELAY_SR_0[19] / Q
+    Ending point:                            DD0.PS_DRV[0] / D
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[5] [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+DD0.PON_DELAY_SR_0[19]        FD1S3IX      Q        Out     0.972     0.972       -         
+PON_DELAY_SR[19]              Net          -        -       -         -           1         
+DD0.PS_DRV_ns_3_0_.m20_am     ORCALUT4     A        In      0.000     0.972       -         
+DD0.PS_DRV_ns_3_0_.m20_am     ORCALUT4     Z        Out     1.017     1.989       -         
+m20_am                        Net          -        -       -         -           1         
+DD0.PS_DRV_ns_3_0_.m20        PFUMX        BLUT     In      0.000     1.989       -         
+DD0.PS_DRV_ns_3_0_.m20        PFUMX        Z        Out     0.214     2.203       -         
+N_21                          Net          -        -       -         -           1         
+DD0.PS_DRV_ns_3_0_.m23        ORCALUT4     B        In      0.000     2.203       -         
+DD0.PS_DRV_ns_3_0_.m23        ORCALUT4     Z        Out     0.617     2.820       -         
+PS_DRV_ns[0]                  Net          -        -       -         -           1         
+DD0.PS_DRV[0]                 FD1S3AX      D        In      0.000     2.820       -         
+============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      52.631
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         52.526
+
+    - Propagation time:                      0.972
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 51.554
+
+    Number of logic level(s):                0
+    Starting point:                          DD0.PON_DELAY_SR[0] / Q
+    Ending point:                            DD0.PON_DELAY_SR[1] / D
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+    -Timing constraint applied as multi cycle path with factor 2 (from c:clock_tree_15|CLOCK_R_derived_clock[14] to c:clock_tree_15|CLOCK_R_derived_clock[14])
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                    Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+DD0.PON_DELAY_SR[0]     FD1S3AX     Q        Out     0.972     0.972       -         
+PON_DELAY_SR[0]         Net         -        -       -         -           1         
+DD0.PON_DELAY_SR[1]     FD1S3IX     D        In      0.000     0.972       -         
+=====================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      52.631
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         52.526
+
+    - Propagation time:                      0.972
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 51.554
+
+    Number of logic level(s):                0
+    Starting point:                          DD0.PON_DELAY_SR[1] / Q
+    Ending point:                            DD0.PON_DELAY_SR[2] / D
+    The start point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+    The end   point is clocked by            clock_tree_15|CLOCK_R_derived_clock[14] [rising] on pin CK
+    -Timing constraint applied as multi cycle path with factor 2 (from c:clock_tree_15|CLOCK_R_derived_clock[14] to c:clock_tree_15|CLOCK_R_derived_clock[14])
+
+Instance / Net                      Pin      Pin               Arrival     No. of    
+Name                    Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------
+DD0.PON_DELAY_SR[1]     FD1S3IX     Q        Out     0.972     0.972       -         
+PON_DELAY_SR_Q[1]       Net         -        -       -         -           1         
+DD0.PON_DELAY_SR[2]     FD1S3IX     D        In      0.000     0.972       -         
+=====================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: disp_drv_test|M_CLK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                                    Arrival           
+Instance            Reference                              Type        Pin     Net              Time        Slack 
+                    Clock                                                                                         
+------------------------------------------------------------------------------------------------------------------
+CTR0.CLOCK_R[0]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[0]       1.148       21.112
+CTR0.CLOCK_R[5]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R_i[5]     1.445       21.244
+CTR0.CLOCK_R[1]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[1]       1.108       21.295
+CTR0.CLOCK_R[2]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[2]       1.108       21.295
+CTR0.CLOCK_R[3]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[3]       1.108       21.438
+CTR0.CLOCK_R[4]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[4]       1.108       21.438
+CTR0.CLOCK_R[6]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[6]       1.044       21.644
+CTR0.CLOCK_R[7]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[7]       1.044       21.787
+CTR0.CLOCK_R[8]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[8]       1.044       21.787
+CTR0.CLOCK_R[9]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     Q       CLOCK_R[9]       1.044       21.930
+==================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                                               Required           
+Instance             Reference                              Type        Pin     Net                         Time         Slack 
+                     Clock                                                                                                     
+-------------------------------------------------------------------------------------------------------------------------------
+CTR0.CLOCK_R[13]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_s_13_0_S0       26.210       21.112
+CTR0.CLOCK_R[14]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_0_0[14]         26.210       21.112
+CTR0.CLOCK_R[11]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_11_0_S0     26.210       21.255
+CTR0.CLOCK_R[12]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_11_0_S1     26.210       21.255
+CTR0.CLOCK_R[9]      disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_9_0_S0      26.210       21.398
+CTR0.CLOCK_R[10]     disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_9_0_S1      26.210       21.398
+CTR0.CLOCK_R[7]      disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_7_0_S0      26.210       21.540
+CTR0.CLOCK_R[8]      disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_7_0_S1      26.210       21.540
+CTR0.CLOCK_R[6]      disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_5_0_S1      26.210       21.683
+CTR0.CLOCK_R[3]      disp_drv_test|M_CLK_inferred_clock     FD1S3AX     D       un4_clock_r_cry_3_0_S0      26.210       21.826
+===============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      26.316
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         26.210
+
+    - Propagation time:                      5.098
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     21.112
+
+    Number of logic level(s):                8
+    Starting point:                          CTR0.CLOCK_R[0] / Q
+    Ending point:                            CTR0.CLOCK_R[14] / D
+    The start point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+CTR0.CLOCK_R[0]                 FD1S3AX     Q        Out     1.148     1.148       -         
+CLOCK_R[0]                      Net         -        -       -         -           4         
+CTR0.un4_clock_r_2_cry_0_0      CCU2D       A1       In      0.000     1.148       -         
+CTR0.un4_clock_r_2_cry_0_0      CCU2D       COUT     Out     1.544     2.692       -         
+un4_clock_r_2_cry_0             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_1_0      CCU2D       CIN      In      0.000     2.692       -         
+CTR0.un4_clock_r_2_cry_1_0      CCU2D       COUT     Out     0.143     2.835       -         
+un4_clock_r_2_cry_2             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_3_0      CCU2D       CIN      In      0.000     2.835       -         
+CTR0.un4_clock_r_2_cry_3_0      CCU2D       COUT     Out     0.143     2.978       -         
+un4_clock_r_2_cry_4             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_5_0      CCU2D       CIN      In      0.000     2.978       -         
+CTR0.un4_clock_r_2_cry_5_0      CCU2D       COUT     Out     0.143     3.121       -         
+un4_clock_r_2_cry_6             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_7_0      CCU2D       CIN      In      0.000     3.121       -         
+CTR0.un4_clock_r_2_cry_7_0      CCU2D       COUT     Out     0.143     3.264       -         
+un4_clock_r_2_cry_8             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_9_0      CCU2D       CIN      In      0.000     3.264       -         
+CTR0.un4_clock_r_2_cry_9_0      CCU2D       COUT     Out     0.143     3.406       -         
+un4_clock_r_2_cry_10            Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_11_0     CCU2D       CIN      In      0.000     3.406       -         
+CTR0.un4_clock_r_2_cry_11_0     CCU2D       COUT     Out     0.143     3.549       -         
+un4_clock_r_2_cry_12            Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_13_0     CCU2D       CIN      In      0.000     3.549       -         
+CTR0.un4_clock_r_2_cry_13_0     CCU2D       S1       Out     1.549     5.098       -         
+un4_clock_r_0_0[14]             Net         -        -       -         -           1         
+CTR0.CLOCK_R[14]                FD1S3AX     D        In      0.000     5.098       -         
+=============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      26.316
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         26.210
+
+    - Propagation time:                      5.098
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     21.112
+
+    Number of logic level(s):                8
+    Starting point:                          CTR0.CLOCK_R[0] / Q
+    Ending point:                            CTR0.CLOCK_R[13] / D
+    The start point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                          Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+CTR0.CLOCK_R[0]               FD1S3AX     Q        Out     1.148     1.148       -         
+CLOCK_R[0]                    Net         -        -       -         -           4         
+CTR0.un4_clock_r_cry_0_0      CCU2D       A1       In      0.000     1.148       -         
+CTR0.un4_clock_r_cry_0_0      CCU2D       COUT     Out     1.544     2.692       -         
+un4_clock_r_cry_0             Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_1_0      CCU2D       CIN      In      0.000     2.692       -         
+CTR0.un4_clock_r_cry_1_0      CCU2D       COUT     Out     0.143     2.835       -         
+un4_clock_r_cry_2             Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_3_0      CCU2D       CIN      In      0.000     2.835       -         
+CTR0.un4_clock_r_cry_3_0      CCU2D       COUT     Out     0.143     2.978       -         
+un4_clock_r_cry_4             Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_5_0      CCU2D       CIN      In      0.000     2.978       -         
+CTR0.un4_clock_r_cry_5_0      CCU2D       COUT     Out     0.143     3.121       -         
+un4_clock_r_cry_6             Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_7_0      CCU2D       CIN      In      0.000     3.121       -         
+CTR0.un4_clock_r_cry_7_0      CCU2D       COUT     Out     0.143     3.264       -         
+un4_clock_r_cry_8             Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_9_0      CCU2D       CIN      In      0.000     3.264       -         
+CTR0.un4_clock_r_cry_9_0      CCU2D       COUT     Out     0.143     3.406       -         
+un4_clock_r_cry_10            Net         -        -       -         -           1         
+CTR0.un4_clock_r_cry_11_0     CCU2D       CIN      In      0.000     3.406       -         
+CTR0.un4_clock_r_cry_11_0     CCU2D       COUT     Out     0.143     3.549       -         
+un4_clock_r_cry_12            Net         -        -       -         -           1         
+CTR0.un4_clock_r_s_13_0       CCU2D       CIN      In      0.000     3.549       -         
+CTR0.un4_clock_r_s_13_0       CCU2D       S0       Out     1.549     5.098       -         
+un4_clock_r_s_13_0_S0         Net         -        -       -         -           1         
+CTR0.CLOCK_R[13]              FD1S3AX     D        In      0.000     5.098       -         
+===========================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      26.316
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         26.210
+
+    - Propagation time:                      4.966
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 21.244
+
+    Number of logic level(s):                5
+    Starting point:                          CTR0.CLOCK_R[5] / Q
+    Ending point:                            CTR0.CLOCK_R[14] / D
+    The start point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            disp_drv_test|M_CLK_inferred_clock [rising] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+CTR0.CLOCK_R[5]                 FD1S3AX     Q        Out     1.445     1.445       -         
+CLOCK_R_i[5]                    Net         -        -       -         -           107       
+CTR0.un4_clock_r_2_cry_5_0      CCU2D       A0       In      0.000     1.445       -         
+CTR0.un4_clock_r_2_cry_5_0      CCU2D       COUT     Out     1.544     2.989       -         
+un4_clock_r_2_cry_6             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_7_0      CCU2D       CIN      In      0.000     2.989       -         
+CTR0.un4_clock_r_2_cry_7_0      CCU2D       COUT     Out     0.143     3.132       -         
+un4_clock_r_2_cry_8             Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_9_0      CCU2D       CIN      In      0.000     3.132       -         
+CTR0.un4_clock_r_2_cry_9_0      CCU2D       COUT     Out     0.143     3.275       -         
+un4_clock_r_2_cry_10            Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_11_0     CCU2D       CIN      In      0.000     3.275       -         
+CTR0.un4_clock_r_2_cry_11_0     CCU2D       COUT     Out     0.143     3.417       -         
+un4_clock_r_2_cry_12            Net         -        -       -         -           1         
+CTR0.un4_clock_r_2_cry_13_0     CCU2D       CIN      In      0.000     3.417       -         
+CTR0.un4_clock_r_2_cry_13_0     CCU2D       S1       Out     1.549     4.966       -         
+un4_clock_r_0_0[14]             Net         -        -       -         -           1         
+CTR0.CLOCK_R[14]                FD1S3AX     D        In      0.000     4.966       -         
+=============================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 149MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 149MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 129 of 6864 (2%)
+PIC Latch:       0
+I/O cells:       3
+Block Rams : 6 of 26 (23%)
+
+
+Details:
+CCU2D:          32
+DP8KC:          6
+FD1P3AX:        43
+FD1S3AX:        42
+FD1S3IX:        37
+FD1S3JX:        6
+GSR:            1
+IB:             1
+INV:            9
+L6MUX21:        9
+OB:             2
+OFS1P3JX:       1
+ORCALUT4:       116
+OSCH:           1
+PFUMX:          26
+PUR:            1
+VHI:            11
+VLO:            11
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 32MB peak: 149MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat May 12 18:41:14 2018
+
+###########################################################]

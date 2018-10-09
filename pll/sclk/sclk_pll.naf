@@ -1,0 +1,7 @@
+CLKI  i
+RST  i
+ENCLKOP  i
+ENCLKOS  i
+CLKOP  o
+CLKOS  o
+LOCK  o

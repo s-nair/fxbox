@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.10.0.111.2
+Fri May 18 20:57:53 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.10_x64\ispfpga\bin\nt64\scuba.exe -w -n ascii_table -lang vhdl -synth lse -bus_exp 7 -bb -arch xo2c00 -type romblk -device LCMXO2-7000HE -addr_width 7 -data_width 64 -num_words 128 -cascade -1 -memfile c:/fpga/projects/fxbox/rom/mem/ascii_table_rom.mem -memformat hex -init_data DYNAMIC 
+    Circuit name     : ascii_table
+    Module type      : EBR_ROM
+    Module Version   : 5.4
+    Ports            : 
+	Inputs       : Address[6:0], OutClock, OutClockEn, Reset
+	Outputs      : Q[63:0]
+    I/O buffer       : not inserted
+    Memory file      : c:/fpga/projects/fxbox/rom/mem/ascii_table_rom.mem
+    EDIF output      : ascii_table.edn
+    VHDL output      : ascii_table.vhd
+    VHDL template    : ascii_table_tmpl.vhd
+    VHDL testbench    : tb_ascii_table_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : ascii_table.srp
+    Element Usage    :
+          DP8KC : 4
+    Estimated Resource Usage:
+            EBR : 4

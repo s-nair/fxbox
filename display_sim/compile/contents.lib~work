@@ -1,0 +1,26 @@
+23
+~E 1 "./../../rom/ascii_table.vhd" 14 ascii_table
+~A 1 "./../../rom/ascii_table.vhd" 23 Structure
+~E 1 "./../../src/box_top.vhd" 12 box_top
+~A 1 "./../../src/box_top.vhd" 20 rtl
+~E 1 "./../../src/clock_tree.vhd" 86 clock_tree
+~A 1 "./../../src/clock_tree.vhd" 94 rtl
+~E 1 "./../../src/display_driver.vhd" 12 display_driver
+~A 1 "./../../src/display_driver.vhd" 22 rtl
+~E 1 "./../../src/i2c_controller.vhd" 12 i2c_controller
+~A 1 "./../../src/i2c_controller.vhd" 25 rtl
+~E 1 "./../../src/i2c_master.vhd" 51 i2c_master
+~A 1 "./../../src/i2c_master.vhd" 66 rtl
+~E 1 "./../../src/input_handler.vhd" 9 input_handler
+~A 1 "./../../src/input_handler.vhd" 17 rtl
+~E 1 "./../../pdpram/ram_data.vhd" 14 ram_data
+~A 1 "./../../pdpram/ram_data.vhd" 28 Structure
+~E 1 "./../../rom/screen_clean.vhd" 14 screen_clean
+~A 1 "./../../rom/screen_clean.vhd" 23 Structure
+~E 1 "./../../rom/screen_echo.vhd" 14 screen_echo
+~A 1 "./../../rom/screen_echo.vhd" 23 Structure
+~E 1 "./../../rom/screen_reverb.vhd" 14 screen_reverb
+~A 1 "./../../rom/screen_reverb.vhd" 23 Structure
+~C 1 "./../../pdpram/ram_data.vhd" 183 structure_con
+~E 1 "./../../src/tb/box_top_tb.vhd" 8 testbench
+~A 1 "./../../src/tb/box_top_tb.vhd" 11 tb

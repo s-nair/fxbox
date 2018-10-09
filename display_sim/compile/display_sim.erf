@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\fpga\projects\FxBox\display_sim\..\src\input_handler.vhd" 
+MESSAGE "Compile Entity "input_handler"" 
+MESSAGE "Compile Architecture "rtl" of Entity "input_handler"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

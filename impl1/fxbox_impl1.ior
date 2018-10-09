@@ -1,0 +1,81 @@
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file fxbox_impl1.ncd.
+Design name: box_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: box_top
+// Package: TQFP144
+// ncd File: fxbox_impl1.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Mon Oct 01 17:53:10 2018
+// M: Minimum Performance Grade
+// iotiming FxBox_impl1.ncd FxBox_impl1.prf -gui -msgset C:/fpga/projects/FxBox/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port     Clock    Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+ADC_DATA ADC_BCK  R    -1.616      M       9.514     4
+ADC_DATA ADC_LRCK R    -1.857      M       8.269     4
+ADC_LRCK ADC_BCK  R     4.107      4      11.225     4
+RESET    ADC_LRCK F     6.363      4      -1.194     M
+
+
+// Clock to Output Delay
+
+Port     Clock    Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+DAC_DATA ADC_BCK  R    20.656         4        5.104          M
+DAC_DATA ADC_LRCK R    14.052         4        3.938          M
+
+
+// Internal_Clock to Input
+
+Port     Internal_Clock          
+--------------------------------------------------------
+BTN_LEFT SYS_CLK_TREE[14]        
+BTN_RIGH SYS_CLK_TREE[14]        
+RESET    SYS_CLK_TREE[5]         
+RESET    BTN0/IN_DEBOUNCE        
+RESET    BTN1/IN_DEBOUNCE        
+
+
+// Internal_Clock to Output
+
+Port         Internal_Clock          
+--------------------------------------------------------
+ADC_SCK      M_CLK                   
+DAC_I2C_SCL  SYS_CLK_TREE[5]         
+DAC_I2C_SDA  SYS_CLK_TREE[5]_enable_4
+DAC_RST_N    SYS_CLK_TREE[5]         
+DAC_SCK      M_CLK                   
+DISP_I2C_SCL SYS_CLK_TREE[5]         
+DISP_I2C_SDA SYS_CLK_TREE[5]_enable_2
+WARNING: you must also run trce with hold speed: 4
+WARNING: you must also run trce with setup speed: M

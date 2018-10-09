@@ -1,0 +1,14 @@
+C:/fpga/projects/FxBox/src/pkg/fxbox_pkg.vhd
+C:/fpga/projects/FxBox/pdpram/._Real_._Math_.vhd
+C:/fpga/projects/FxBox/src/clock_tree.vhd
+C:/fpga/projects/FxBox/src/input_handler.vhd
+C:/fpga/projects/FxBox/rom/screen_echo.vhd
+C:/fpga/projects/FxBox/rom/screen_reverb.vhd
+C:/fpga/projects/FxBox/rom/screen_clean.vhd
+C:/fpga/projects/FxBox/rom/ascii_table.vhd
+C:/fpga/projects/FxBox/pdpram/ram_data.vhd
+C:/fpga/projects/FxBox/src/i2c_master.vhd
+C:/fpga/projects/FxBox/src/i2c_controller.vhd
+C:/fpga/projects/FxBox/src/display_driver.vhd
+C:/fpga/projects/FxBox/src/box_top.vhd
+C:/fpga/projects/FxBox/src/tb/box_top_tb.vhd
